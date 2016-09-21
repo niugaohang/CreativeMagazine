@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NewsViewController.h
 //  CreativeMagazine
 //
 //  Created by 牛高航 on 16/9/21.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NewsViewController : UIViewController
 
 @end
-

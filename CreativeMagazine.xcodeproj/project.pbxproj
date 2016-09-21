@@ -9,11 +9,27 @@
 /* Begin PBXBuildFile section */
 		4F7E2DA91D9257B900C5E6E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DA81D9257B900C5E6E8 /* main.m */; };
 		4F7E2DAC1D9257B900C5E6E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DAB1D9257B900C5E6E8 /* AppDelegate.m */; };
-		4F7E2DAF1D9257B900C5E6E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DAE1D9257B900C5E6E8 /* ViewController.m */; };
 		4F7E2DB21D9257B900C5E6E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DB01D9257B900C5E6E8 /* Main.storyboard */; };
 		4F7E2DB41D9257B900C5E6E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DB31D9257B900C5E6E8 /* Assets.xcassets */; };
 		4F7E2DB71D9257B900C5E6E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DB51D9257B900C5E6E8 /* LaunchScreen.storyboard */; };
 		4F7E2DC21D9257B900C5E6E8 /* CreativeMagazineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DC11D9257B900C5E6E8 /* CreativeMagazineUITests.m */; };
+		4F7E2DCE1D925FAC00C5E6E8 /* BootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DCD1D925FAC00C5E6E8 /* BootViewController.m */; };
+		4F7E2DD21D9266A200C5E6E8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DD11D9266A200C5E6E8 /* Default@2x.png */; };
+		4F7E2DD51D926CFD00C5E6E8 /* NTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DD41D926CFD00C5E6E8 /* NTViewController.m */; };
+		4F7E2DD71D926E5800C5E6E8 /* bottom_nav_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DD61D926E5800C5E6E8 /* bottom_nav_background@2x.png */; };
+		4F7E2DDD1D926E6F00C5E6E8 /* logo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DD81D926E6F00C5E6E8 /* logo1@2x.png */; };
+		4F7E2DDE1D926E6F00C5E6E8 /* logo2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DD91D926E6F00C5E6E8 /* logo2@2x.png */; };
+		4F7E2DDF1D926E6F00C5E6E8 /* logo3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DDA1D926E6F00C5E6E8 /* logo3@2x.png */; };
+		4F7E2DE01D926E6F00C5E6E8 /* logo4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DDB1D926E6F00C5E6E8 /* logo4@2x.png */; };
+		4F7E2DE11D926E6F00C5E6E8 /* logo5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7E2DDC1D926E6F00C5E6E8 /* logo5@2x.png */; };
+		4F7E2DE41D926F3500C5E6E8 /* SelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DE31D926F3500C5E6E8 /* SelectionViewController.m */; };
+		4F7E2DE81D926FA700C5E6E8 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DE71D926FA700C5E6E8 /* BaseNavigationViewController.m */; };
+		4F7E2DEB1D92700900C5E6E8 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DEA1D92700900C5E6E8 /* NewsViewController.m */; };
+		4F7E2DEE1D92707100C5E6E8 /* DesignerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DED1D92707100C5E6E8 /* DesignerViewController.m */; };
+		4F7E2DF11D9270BC00C5E6E8 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DF01D9270BC00C5E6E8 /* ShoppingViewController.m */; };
+		4F7E2DF41D9270CD00C5E6E8 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DF31D9270CD00C5E6E8 /* MoreViewController.m */; };
+		4F7E2DF71D92722A00C5E6E8 /* NTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DF61D92722A00C5E6E8 /* NTButton.m */; };
+		A6B7D2658A4936F8D14989E5 /* libPods-CreativeMagazine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE63E0B4340E85FE1AD8C873 /* libPods-CreativeMagazine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		067F5F668C3D3CAA49B9B176 /* Pods-CreativeMagazine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreativeMagazine.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreativeMagazine/Pods-CreativeMagazine.release.xcconfig"; sourceTree = "<group>"; };
+		0CC10F5BD2AD1B221E66040F /* Pods-CreativeMagazine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreativeMagazine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreativeMagazine/Pods-CreativeMagazine.debug.xcconfig"; sourceTree = "<group>"; };
 		4F7E2DA41D9257B900C5E6E8 /* CreativeMagazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeMagazine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7E2DA81D9257B900C5E6E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4F7E2DAA1D9257B900C5E6E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F7E2DAB1D9257B900C5E6E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4F7E2DAD1D9257B900C5E6E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4F7E2DAE1D9257B900C5E6E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4F7E2DB11D9257B900C5E6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F7E2DB31D9257B900C5E6E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F7E2DB61D9257B900C5E6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +56,33 @@
 		4F7E2DBD1D9257B900C5E6E8 /* CreativeMagazineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreativeMagazineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7E2DC11D9257B900C5E6E8 /* CreativeMagazineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreativeMagazineUITests.m; sourceTree = "<group>"; };
 		4F7E2DC31D9257B900C5E6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7E2DCC1D925FAC00C5E6E8 /* BootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootViewController.h; sourceTree = "<group>"; };
+		4F7E2DCD1D925FAC00C5E6E8 /* BootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootViewController.m; sourceTree = "<group>"; };
+		4F7E2DCF1D925FC900C5E6E8 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4F7E2DD11D9266A200C5E6E8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4F7E2DD31D926CFD00C5E6E8 /* NTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTViewController.h; sourceTree = "<group>"; };
+		4F7E2DD41D926CFD00C5E6E8 /* NTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTViewController.m; sourceTree = "<group>"; };
+		4F7E2DD61D926E5800C5E6E8 /* bottom_nav_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom_nav_background@2x.png"; sourceTree = "<group>"; };
+		4F7E2DD81D926E6F00C5E6E8 /* logo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo1@2x.png"; sourceTree = "<group>"; };
+		4F7E2DD91D926E6F00C5E6E8 /* logo2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo2@2x.png"; sourceTree = "<group>"; };
+		4F7E2DDA1D926E6F00C5E6E8 /* logo3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo3@2x.png"; sourceTree = "<group>"; };
+		4F7E2DDB1D926E6F00C5E6E8 /* logo4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo4@2x.png"; sourceTree = "<group>"; };
+		4F7E2DDC1D926E6F00C5E6E8 /* logo5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo5@2x.png"; sourceTree = "<group>"; };
+		4F7E2DE21D926F3500C5E6E8 /* SelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionViewController.h; sourceTree = "<group>"; };
+		4F7E2DE31D926F3500C5E6E8 /* SelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionViewController.m; sourceTree = "<group>"; };
+		4F7E2DE61D926FA700C5E6E8 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		4F7E2DE71D926FA700C5E6E8 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		4F7E2DE91D92700900C5E6E8 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		4F7E2DEA1D92700900C5E6E8 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		4F7E2DEC1D92707100C5E6E8 /* DesignerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignerViewController.h; sourceTree = "<group>"; };
+		4F7E2DED1D92707100C5E6E8 /* DesignerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignerViewController.m; sourceTree = "<group>"; };
+		4F7E2DEF1D9270BC00C5E6E8 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
+		4F7E2DF01D9270BC00C5E6E8 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
+		4F7E2DF21D9270CD00C5E6E8 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		4F7E2DF31D9270CD00C5E6E8 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		4F7E2DF51D92722A00C5E6E8 /* NTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTButton.h; sourceTree = "<group>"; };
+		4F7E2DF61D92722A00C5E6E8 /* NTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTButton.m; sourceTree = "<group>"; };
+		CE63E0B4340E85FE1AD8C873 /* libPods-CreativeMagazine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CreativeMagazine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B7D2658A4936F8D14989E5 /* libPods-CreativeMagazine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43D5607484AC7D16EB047DED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE63E0B4340E85FE1AD8C873 /* libPods-CreativeMagazine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F7E2D9B1D9257B900C5E6E8 = {
 			isa = PBXGroup;
 			children = (
 				4F7E2DA61D9257B900C5E6E8 /* CreativeMagazine */,
 				4F7E2DC01D9257B900C5E6E8 /* CreativeMagazineUITests */,
 				4F7E2DA51D9257B900C5E6E8 /* Products */,
+				A0BFB435523609187CB714B4 /* Pods */,
+				43D5607484AC7D16EB047DED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +135,25 @@
 		4F7E2DA61D9257B900C5E6E8 /* CreativeMagazine */ = {
 			isa = PBXGroup;
 			children = (
+				4F7E2DCF1D925FC900C5E6E8 /* Header.h */,
 				4F7E2DAA1D9257B900C5E6E8 /* AppDelegate.h */,
 				4F7E2DAB1D9257B900C5E6E8 /* AppDelegate.m */,
-				4F7E2DAD1D9257B900C5E6E8 /* ViewController.h */,
-				4F7E2DAE1D9257B900C5E6E8 /* ViewController.m */,
+				4F7E2DCC1D925FAC00C5E6E8 /* BootViewController.h */,
+				4F7E2DCD1D925FAC00C5E6E8 /* BootViewController.m */,
+				4F7E2DE51D926F7B00C5E6E8 /* tabbarVC */,
+				4F7E2DE21D926F3500C5E6E8 /* SelectionViewController.h */,
+				4F7E2DE31D926F3500C5E6E8 /* SelectionViewController.m */,
+				4F7E2DE91D92700900C5E6E8 /* NewsViewController.h */,
+				4F7E2DEA1D92700900C5E6E8 /* NewsViewController.m */,
+				4F7E2DEC1D92707100C5E6E8 /* DesignerViewController.h */,
+				4F7E2DED1D92707100C5E6E8 /* DesignerViewController.m */,
+				4F7E2DEF1D9270BC00C5E6E8 /* ShoppingViewController.h */,
+				4F7E2DF01D9270BC00C5E6E8 /* ShoppingViewController.m */,
+				4F7E2DF21D9270CD00C5E6E8 /* MoreViewController.h */,
+				4F7E2DF31D9270CD00C5E6E8 /* MoreViewController.m */,
 				4F7E2DB01D9257B900C5E6E8 /* Main.storyboard */,
 				4F7E2DB31D9257B900C5E6E8 /* Assets.xcassets */,
 				4F7E2DB51D9257B900C5E6E8 /* LaunchScreen.storyboard */,
-				4F7E2DB81D9257B900C5E6E8 /* Info.plist */,
 				4F7E2DA71D9257B900C5E6E8 /* Supporting Files */,
 			);
 			path = CreativeMagazine;
@@ -97,6 +162,8 @@
 		4F7E2DA71D9257B900C5E6E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4F7E2DD01D92669700C5E6E8 /* 2x */,
+				4F7E2DB81D9257B900C5E6E8 /* Info.plist */,
 				4F7E2DA81D9257B900C5E6E8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -111,6 +178,42 @@
 			path = CreativeMagazineUITests;
 			sourceTree = "<group>";
 		};
+		4F7E2DD01D92669700C5E6E8 /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+				4F7E2DD81D926E6F00C5E6E8 /* logo1@2x.png */,
+				4F7E2DD91D926E6F00C5E6E8 /* logo2@2x.png */,
+				4F7E2DDA1D926E6F00C5E6E8 /* logo3@2x.png */,
+				4F7E2DDB1D926E6F00C5E6E8 /* logo4@2x.png */,
+				4F7E2DDC1D926E6F00C5E6E8 /* logo5@2x.png */,
+				4F7E2DD11D9266A200C5E6E8 /* Default@2x.png */,
+				4F7E2DD61D926E5800C5E6E8 /* bottom_nav_background@2x.png */,
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		4F7E2DE51D926F7B00C5E6E8 /* tabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				4F7E2DD31D926CFD00C5E6E8 /* NTViewController.h */,
+				4F7E2DD41D926CFD00C5E6E8 /* NTViewController.m */,
+				4F7E2DF51D92722A00C5E6E8 /* NTButton.h */,
+				4F7E2DF61D92722A00C5E6E8 /* NTButton.m */,
+				4F7E2DE61D926FA700C5E6E8 /* BaseNavigationViewController.h */,
+				4F7E2DE71D926FA700C5E6E8 /* BaseNavigationViewController.m */,
+			);
+			name = tabbarVC;
+			sourceTree = "<group>";
+		};
+		A0BFB435523609187CB714B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CC10F5BD2AD1B221E66040F /* Pods-CreativeMagazine.debug.xcconfig */,
+				067F5F668C3D3CAA49B9B176 /* Pods-CreativeMagazine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F7E2DC61D9257B900C5E6E8 /* Build configuration list for PBXNativeTarget "CreativeMagazine" */;
 			buildPhases = (
+				519A5844D5531F27E84C1BB0 /* [CP] Check Pods Manifest.lock */,
 				4F7E2DA01D9257B900C5E6E8 /* Sources */,
 				4F7E2DA11D9257B900C5E6E8 /* Frameworks */,
 				4F7E2DA21D9257B900C5E6E8 /* Resources */,
+				64616C5499E601461E33C803 /* [CP] Embed Pods Frameworks */,
+				C84AC5A95A4D25D90E283A44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,9 +299,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7E2DD21D9266A200C5E6E8 /* Default@2x.png in Resources */,
+				4F7E2DE01D926E6F00C5E6E8 /* logo4@2x.png in Resources */,
 				4F7E2DB71D9257B900C5E6E8 /* LaunchScreen.storyboard in Resources */,
 				4F7E2DB41D9257B900C5E6E8 /* Assets.xcassets in Resources */,
 				4F7E2DB21D9257B900C5E6E8 /* Main.storyboard in Resources */,
+				4F7E2DD71D926E5800C5E6E8 /* bottom_nav_background@2x.png in Resources */,
+				4F7E2DDF1D926E6F00C5E6E8 /* logo3@2x.png in Resources */,
+				4F7E2DDE1D926E6F00C5E6E8 /* logo2@2x.png in Resources */,
+				4F7E2DDD1D926E6F00C5E6E8 /* logo1@2x.png in Resources */,
+				4F7E2DE11D926E6F00C5E6E8 /* logo5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,14 +321,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		519A5844D5531F27E84C1BB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64616C5499E601461E33C803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CreativeMagazine/Pods-CreativeMagazine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84AC5A95A4D25D90E283A44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CreativeMagazine/Pods-CreativeMagazine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F7E2DA01D9257B900C5E6E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F7E2DAF1D9257B900C5E6E8 /* ViewController.m in Sources */,
 				4F7E2DAC1D9257B900C5E6E8 /* AppDelegate.m in Sources */,
+				4F7E2DF11D9270BC00C5E6E8 /* ShoppingViewController.m in Sources */,
+				4F7E2DE81D926FA700C5E6E8 /* BaseNavigationViewController.m in Sources */,
+				4F7E2DCE1D925FAC00C5E6E8 /* BootViewController.m in Sources */,
+				4F7E2DEE1D92707100C5E6E8 /* DesignerViewController.m in Sources */,
+				4F7E2DD51D926CFD00C5E6E8 /* NTViewController.m in Sources */,
 				4F7E2DA91D9257B900C5E6E8 /* main.m in Sources */,
+				4F7E2DF71D92722A00C5E6E8 /* NTButton.m in Sources */,
+				4F7E2DE41D926F3500C5E6E8 /* SelectionViewController.m in Sources */,
+				4F7E2DEB1D92700900C5E6E8 /* NewsViewController.m in Sources */,
+				4F7E2DF41D9270CD00C5E6E8 /* MoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +516,7 @@
 		};
 		4F7E2DC71D9257B900C5E6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC10F5BD2AD1B221E66040F /* Pods-CreativeMagazine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CreativeMagazine/Info.plist;
@@ -358,6 +528,7 @@
 		};
 		4F7E2DC81D9257B900C5E6E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 067F5F668C3D3CAA49B9B176 /* Pods-CreativeMagazine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CreativeMagazine/Info.plist;
@@ -408,6 +579,7 @@
 				4F7E2DC81D9257B900C5E6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F7E2DC91D9257B900C5E6E8 /* Build configuration list for PBXNativeTarget "CreativeMagazineUITests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +588,7 @@
 				4F7E2DCB1D9257B900C5E6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
