@@ -75,7 +75,7 @@ static MyRequest *__request;
             successBlock(responseObject);
         }
         else{
-            SHOW_ALERT(@"您的网络瘫痪了，请再试一次！");
+            NNToast(@"您的网络瘫痪了，请再试一次！");
         }
 
         
@@ -113,7 +113,7 @@ static MyRequest *__request;
             successBlock(responseObject);
         }
         else{
-            SHOW_ALERT(@"您的网络瘫痪了，请再试一次！");
+            NNToast(@"您的网络瘫痪了，请再试一次！");
         }
 
         

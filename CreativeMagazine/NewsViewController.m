@@ -7,7 +7,7 @@
 //
 
 #import "NewsViewController.h"
-
+#import "Header.h"
 @interface NewsViewController ()
 
 @end
@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [Tool initWithNavViewWith:@"鲜资讯" leftIteamHidden:YES selfView:self];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

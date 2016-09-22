@@ -29,7 +29,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
+   
     [self initNavView];
     [self initWebView];
     
@@ -37,6 +39,7 @@
     
     _currentIndex = self.selectIndex;
 }
+
 -(void)initNavView
 {
     self.view.backgroundColor=NNRGBAColor(235.0, 235.0, 235.0, 1);

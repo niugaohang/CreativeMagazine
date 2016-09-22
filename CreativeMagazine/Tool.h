@@ -11,7 +11,7 @@
 #import "Header.h"
 @interface Tool : NSObject
 
-+(void)initWithNavViewWith:(NSString *)titleName selfView:(UIViewController *)selfView;
++(void)initWithNavViewWith:(NSString *)titleName leftIteamHidden:(BOOL)hidden selfView:(UIViewController *)selfView;
 
 
 @end

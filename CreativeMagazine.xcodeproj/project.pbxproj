@@ -154,6 +154,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F314F351D93D9C800EAFAA3 /* VisionMagDetailVC(详情) */ = {
+			isa = PBXGroup;
+			children = (
+				4F314F201D93BC5500EAFAA3 /* VisionMagDetailViewController.h */,
+				4F314F211D93BC5500EAFAA3 /* VisionMagDetailViewController.m */,
+			);
+			name = "VisionMagDetailVC(详情)";
+			sourceTree = "<group>";
+		};
+		4F314F361D93DA1C00EAFAA3 /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				4F7E2DF81D92AC0400C5E6E8 /* MyRequest.h */,
+				4F7E2DF91D92AC0400C5E6E8 /* MyRequest.m */,
+				4F314F301D93C45700EAFAA3 /* Tool.h */,
+				4F314F311D93C45700EAFAA3 /* Tool.m */,
+				4F314F1D1D937E0900EAFAA3 /* ToTopLabel.h */,
+				4F314F1E1D937E0900EAFAA3 /* ToTopLabel.m */,
+				4F7E2DCF1D925FC900C5E6E8 /* Header.h */,
+			);
+			name = "Tools(工具)";
+			sourceTree = "<group>";
+		};
 		4F7E2D9B1D9257B900C5E6E8 = {
 			isa = PBXGroup;
 			children = (
@@ -177,18 +200,13 @@
 		4F7E2DA61D9257B900C5E6E8 /* CreativeMagazine */ = {
 			isa = PBXGroup;
 			children = (
-				4F7E2DCF1D925FC900C5E6E8 /* Header.h */,
 				4F7E2DAA1D9257B900C5E6E8 /* AppDelegate.h */,
 				4F7E2DAB1D9257B900C5E6E8 /* AppDelegate.m */,
-				4F7E2DE51D926F7B00C5E6E8 /* tabbarVC */,
-				4F8285B51D936CF900DA9BFF /* model */,
-				4F7E2DF81D92AC0400C5E6E8 /* MyRequest.h */,
-				4F7E2DF91D92AC0400C5E6E8 /* MyRequest.m */,
-				4F314F301D93C45700EAFAA3 /* Tool.h */,
-				4F314F311D93C45700EAFAA3 /* Tool.m */,
-				4F314F1D1D937E0900EAFAA3 /* ToTopLabel.h */,
-				4F314F1E1D937E0900EAFAA3 /* ToTopLabel.m */,
+				4F7E2DE51D926F7B00C5E6E8 /* TabbarVC */,
+				4F8285B51D936CF900DA9BFF /* Model */,
+				4F314F361D93DA1C00EAFAA3 /* Tools(工具) */,
 				4F8285BD1D936ED100DA9BFF /* Selection(精选) */,
+				4F314F351D93D9C800EAFAA3 /* VisionMagDetailVC(详情) */,
 				4F7E2DE91D92700900C5E6E8 /* NewsViewController.h */,
 				4F7E2DEA1D92700900C5E6E8 /* NewsViewController.m */,
 				4F7E2DEC1D92707100C5E6E8 /* DesignerViewController.h */,
@@ -248,7 +266,7 @@
 			path = 2x;
 			sourceTree = "<group>";
 		};
-		4F7E2DE51D926F7B00C5E6E8 /* tabbarVC */ = {
+		4F7E2DE51D926F7B00C5E6E8 /* TabbarVC */ = {
 			isa = PBXGroup;
 			children = (
 				4F7E2DCC1D925FAC00C5E6E8 /* BootViewController.h */,
@@ -260,10 +278,10 @@
 				4F7E2DE61D926FA700C5E6E8 /* BaseNavigationViewController.h */,
 				4F7E2DE71D926FA700C5E6E8 /* BaseNavigationViewController.m */,
 			);
-			name = tabbarVC;
+			name = TabbarVC;
 			sourceTree = "<group>";
 		};
-		4F8285B51D936CF900DA9BFF /* model */ = {
+		4F8285B51D936CF900DA9BFF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				4F8285B61D936D0500DA9BFF /* DataModels.h */,
@@ -272,7 +290,7 @@
 				4F314F231D93BCB700EAFAA3 /* VisionMagDetailModel.h */,
 				4F314F241D93BCB700EAFAA3 /* VisionMagDetailModel.m */,
 			);
-			name = model;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		4F8285BD1D936ED100DA9BFF /* Selection(精选) */ = {
@@ -282,8 +300,6 @@
 				4F7E2DE31D926F3500C5E6E8 /* SelectionViewController.m */,
 				4F8285BA1D936ECB00DA9BFF /* SelectionCustomView.h */,
 				4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */,
-				4F314F201D93BC5500EAFAA3 /* VisionMagDetailViewController.h */,
-				4F314F211D93BC5500EAFAA3 /* VisionMagDetailViewController.m */,
 			);
 			name = "Selection(精选)";
 			sourceTree = "<group>";
@@ -620,6 +636,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CreativeMagazine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = niugaohang.CreativeMagazine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -632,6 +649,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CreativeMagazine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = niugaohang.CreativeMagazine;
 				PRODUCT_NAME = "$(TARGET_NAME)";

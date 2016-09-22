@@ -29,6 +29,7 @@
     self.navigationController.navigationBarHidden = YES;
     [super viewWillAppear:animated];
 
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
