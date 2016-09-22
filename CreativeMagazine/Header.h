@@ -9,13 +9,35 @@
 #ifndef Header_h
 #define Header_h
 
-//启动页
+//启动页  tabbar
 #import "BootViewController.h"
 #import "NTViewController.h"
 #import "NTButton.h"
 #import "BaseNavigationViewController.h"
 
+//第三方
+#import "MyRequest.h"
+#import <AFNetworking/AFNetworking.h>
+#import "UIView+Toast.h"//提示功能
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "Tool.h"
+//Model类
+#import "DataModels.h"
+
+//lab距顶
+#import "ToTopLabel.h"
+
+//首页精选
 #import "SelectionViewController.h"
+//scrollview重用
+#import "SelectionCustomView.h"
+
+//画报详情页
+#import "VisionMagDetailViewController.h"
+
+
 #import "NewsViewController.h"
 #import "DesignerViewController.h"
 #import "ShoppingViewController.h"
@@ -157,11 +179,19 @@ kWindow.userInteractionEnabled = YES;\
 #define kDISPATCH_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
 
 //GCD - 开启异步线程
-#define kDISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+//#define kDISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+
+
+//GCD - 开启异步线程
+#define kDISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);\dispatch_async(queue, ^{\globalQueueBlock\});
+
+//对话框
+#define SHOW_ALERT(msg) UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提醒" message:msg delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];\
+[alert show];
 
 
 
-
+#define  NEWVISION_URL @"http://www.wowsai.com/newphone/newvision"
 
 
 #endif /* Header_h */
