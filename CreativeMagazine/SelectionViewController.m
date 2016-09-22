@@ -70,7 +70,7 @@
         } failureBlock:^(NSString *error) {
             
             [SVProgressHUD dismiss];
-            LRToast(error);
+            NNToast(error);
         }];
     });
 }
@@ -198,7 +198,7 @@
     VisionMagDetailViewController *visionMagDetailVC = [[VisionMagDetailViewController alloc]init];
     visionMagDetailVC.reModel=visionMagDetailModel;
     visionMagDetailVC.dataArr=_dataArr;
-    visionMagDetailVC.selectIndex=btn.tag;
+    visionMagDetailVC.selectIndex=(int)btn.tag;
     
     [self.navigationController pushViewController:visionMagDetailVC animated:YES];
     
@@ -218,14 +218,14 @@
     //判断是 第一页
     if (_selectionScrollView.contentOffset.x<_selectionScrollView.frame.size.width) {
         NNLog(@"123123123");
-        LRToast(@"已经是第一页了");
+        NNToast(@"已经是第一页了");
     }
 }
 //我们移动手指开始
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
     //判断是 最后一页
     if (_selectionScrollView.contentOffset.x>=_selectionScrollView.frame.size.width*([self.dataArr count]-1)+50) {
-        LRToast(@"已经是最后一页了");
+        NNToast(@"已经是最后一页了");
     }
 }
 //当滚动视图停止

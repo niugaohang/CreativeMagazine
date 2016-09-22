@@ -13,7 +13,7 @@
 @property(nonatomic,copy)NSMutableArray *dataArr;
 
 
-@property (nonatomic,assign)NSUInteger selectIndex;
+@property (nonatomic,assign)int selectIndex;
 
 @property (nonatomic,assign)int currentIndex;
 
