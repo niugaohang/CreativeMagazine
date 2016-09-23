@@ -55,8 +55,16 @@ static const CGFloat S_WASD = 15.f;   // 上下左右间距
 {
     [super layoutSubviews];
     
+    NSURL *url;
+    if (_reModel.image)
+    {
+        url=[NSURL URLWithString:_reModel.image];
+    }
+    else{
+        url=[NSURL URLWithString:_reModel.imageUrl];
 
-    NSURL *url=[NSURL URLWithString:_reModel.image];
+    }
+    
     
     [_imgView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"notfound.png"]];
     float imgW= [_reModel.width floatValue];
@@ -87,7 +95,7 @@ static const CGFloat S_WASD = 15.f;   // 上下左右间距
     [attributedString addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0x999999) range:allRange];
     _titleLab.attributedText = attributedString;
     CGRect jnRect = [ attributedString boundingRectWithSize:CGSizeMake(VIEW_WIDTH-30, 3000000) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    _titleLab.frame=CGRectMake(S_WASD, S_WASD+_imgView.frame.size.height,  VIEW_WIDTH-30, jnRect.size.height+5);
+    _titleLab.frame=CGRectMake(S_WASD, S_WASD+_imgView.frame.size.height+10,  VIEW_WIDTH-30, jnRect.size.height+5);
     _titleLab.font = [UIFont systemFontOfSize:16];
     _titleLab.textColor=UIColorFromRGB(0x333333);
 
@@ -103,15 +111,15 @@ static const CGFloat S_WASD = 15.f;   // 上下左右间距
     [paragraphStyle1 setLineSpacing:4];
     
     [attributedString1 addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:allRange1];
-    [attributedString1 addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:16] range:allRange1];
+    [attributedString1 addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14] range:allRange1];
     [attributedString1 addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0x999999) range:allRange1];
     _introLab.attributedText = attributedString1;
     CGRect jnRect1 = [ attributedString1 boundingRectWithSize:CGSizeMake(VIEW_WIDTH-30, 3000000) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    _introLab.frame=CGRectMake(S_WASD, S_WASD+_imgView.frame.size.height+_titleLab.frame.size.height,  VIEW_WIDTH-30, jnRect1.size.height+5);
-    _introLab.font = [UIFont systemFontOfSize:16];
+    _introLab.frame=CGRectMake(S_WASD, S_WASD+_imgView.frame.size.height+10+_titleLab.frame.size.height,  VIEW_WIDTH-30, jnRect1.size.height+5);
+    _introLab.font = [UIFont systemFontOfSize:14];
     _introLab.textColor=UIColorFromRGB(0x666666);
 
-    _lineLabel.frame=CGRectMake(0, S_WASD+_imgView.frame.size.height+_titleLab.frame.size.height+_introLab.frame.size.height+5-0.5, VIEW_WIDTH, 0.5);
+    _lineLabel.frame=CGRectMake(0, S_WASD+_imgView.frame.size.height+10+_titleLab.frame.size.height+_introLab.frame.size.height+5-0.5, VIEW_WIDTH, 0.5);
     _lineLabel.backgroundColor = UIColorFromRGB(0xe5e5e5);
     
     
@@ -119,7 +127,15 @@ static const CGFloat S_WASD = 15.f;   // 上下左右间距
 }
 -(CGFloat)cellFrameHeigth:(VisionMagModel*)aModel
 {
-    NSURL *url=[NSURL URLWithString:aModel.image];
+    NSURL *url;
+    if (_reModel.image)
+    {
+        url=[NSURL URLWithString:_reModel.image];
+    }
+    else{
+        url=[NSURL URLWithString:_reModel.imageUrl];
+        
+    }
     //        NSLog(@"----%@",arr);
     [_imgView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"notfound.png"]];
     float imgW= [aModel.width floatValue];
@@ -148,7 +164,7 @@ static const CGFloat S_WASD = 15.f;   // 上下左右间距
     [attributedString addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0x999999) range:allRange];
     _titleLab.attributedText = attributedString;
     CGRect jnRect = [ attributedString boundingRectWithSize:CGSizeMake(VIEW_WIDTH-30, 3000000) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    _titleLab.frame=CGRectMake(S_WASD, S_WASD+_imgView.frame.size.height,  VIEW_WIDTH-30, jnRect.size.height+5);
+    _titleLab.frame=CGRectMake(S_WASD, S_WASD+_imgView.frame.size.height+10,  VIEW_WIDTH-30, jnRect.size.height+5);
     _titleLab.font = [UIFont systemFontOfSize:16];
     _titleLab.textColor=UIColorFromRGB(0x333333);
     
@@ -163,19 +179,19 @@ static const CGFloat S_WASD = 15.f;   // 上下左右间距
     [paragraphStyle1 setLineSpacing:4];
     
     [attributedString1 addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:allRange1];
-    [attributedString1 addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:16] range:allRange1];
+    [attributedString1 addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14] range:allRange1];
     [attributedString1 addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0x999999) range:allRange1];
     _introLab.attributedText = attributedString1;
     CGRect jnRect1 = [ attributedString1 boundingRectWithSize:CGSizeMake(VIEW_WIDTH-30, 3000000) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil];
-    _introLab.frame=CGRectMake(S_WASD, S_WASD+_imgView.frame.size.height+_titleLab.frame.size.height,  VIEW_WIDTH-30, jnRect1.size.height+5);
-    _introLab.font = [UIFont systemFontOfSize:16];
+    _introLab.frame=CGRectMake(S_WASD, S_WASD+_imgView.frame.size.height+10+_titleLab.frame.size.height,  VIEW_WIDTH-30, jnRect1.size.height+5);
+    _introLab.font = [UIFont systemFontOfSize:14];
     _introLab.textColor=UIColorFromRGB(0x666666);
     
-    _lineLabel.frame=CGRectMake(0, S_WASD+_imgView.frame.size.height+_titleLab.frame.size.height+_introLab.frame.size.height+5-0.5, VIEW_WIDTH, 0.5);
+    _lineLabel.frame=CGRectMake(0, S_WASD+_imgView.frame.size.height+10+_titleLab.frame.size.height+_introLab.frame.size.height+5-0.5, VIEW_WIDTH, 0.5);
     _lineLabel.backgroundColor = UIColorFromRGB(0xe5e5e5);
     
   
-    return S_WASD+_imgView.frame.size.height+_titleLab.frame.size.height+_introLab.frame.size.height+5;
+    return S_WASD+_imgView.frame.size.height+10+_titleLab.frame.size.height+_introLab.frame.size.height+5;
 }
 
 

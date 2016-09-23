@@ -199,4 +199,7 @@ kWindow.userInteractionEnabled = YES;\
 #define  NEWVISION_URL @"http://www.wowsai.com/newphone/newvision"
 #define  ALLNEWSDATA_URL @"http://www.wowsai.com/newphone/newnews"
 
+#define  DESIGNERS_URL @"http://www.wowsai.com/newphone/newdesigner"
+
+
 #endif /* Header_h */

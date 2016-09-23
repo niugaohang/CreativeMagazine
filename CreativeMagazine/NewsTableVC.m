@@ -11,7 +11,7 @@
 @interface NewsTableVC ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  *_tableView;
-    
+    UIRefreshControl *_refreshControl;
 }
 
 @property (nonatomic,retain) NSMutableArray *dataArray;
@@ -72,6 +72,20 @@
     [self.view addSubview:_tableView];
     
      [_tableView reloadData];
+    
+    //目前只能下拉刷新
+    _refreshControl = [[UIRefreshControl alloc] init];
+    _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"努力加载中……"];
+    _refreshControl.tintColor = [UIColor grayColor];
+    [_refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
+    _tableView.refreshControl = _refreshControl;
+}
+- (void)loadData{
+    
+    // 请求数据
+    
+    // 结束刷新
+    [_refreshControl endRefreshing];
 }
 
 

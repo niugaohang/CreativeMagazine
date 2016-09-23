@@ -153,7 +153,14 @@
     visiblePages    =[[NSMutableSet alloc] init];
     
     [self totlePages];
+    
+    
+   
+
 }
+
+
+
 
 #pragma mark-
 #pragma mark-scrollView重用机制-
@@ -194,6 +201,7 @@
         }
     }
 }
+
 - (NewsTableVC *)dequeueRecycledPage
 {
     NewsTableVC *newsTableVC = [recycledPages anyObject];
@@ -242,16 +250,16 @@
     newsTableVC.frame=CGRectMake(_newsScrollView.bounds.size.width*index, 0, _newsScrollView.bounds.size.width, _newsScrollView.bounds.size.height);
     newsTableVC.isLoading=YES;
     
-    
 }
+
 #pragma mark -scrollViewDelegate
 //视图滑动时
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [self totlePages];
     //回到第一页重新加载
-    if (_newsScrollView.contentOffset.x>_newsScrollView.frame.size.width*([self.titleArray count]-1)+100) {
-        [_newsScrollView scrollRectToVisible:CGRectMake(_newsScrollView.frame.size.width*0,0,_newsScrollView.frame.size.width,_newsScrollView.frame.size.height) animated:NO];
-    }
+//    if (_newsScrollView.contentOffset.x>_newsScrollView.frame.size.width*([self.titleArray count]-1)+100) {
+//        [_newsScrollView scrollRectToVisible:CGRectMake(_newsScrollView.frame.size.width*0,0,_newsScrollView.frame.size.width,_newsScrollView.frame.size.height) animated:NO];
+//    }
 }
 //我们移动手指开始
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{

@@ -210,9 +210,9 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [self totlePages];
     //回到第一页重新加载
-    if (_selectionScrollView.contentOffset.x>_selectionScrollView.frame.size.width*([self.dataArr count]-1)+100) {
-        [_selectionScrollView scrollRectToVisible:CGRectMake(_selectionScrollView.frame.size.width*0,0,_selectionScrollView.frame.size.width,_selectionScrollView.frame.size.height) animated:NO];
-    }
+//    if (_selectionScrollView.contentOffset.x>_selectionScrollView.frame.size.width*([self.dataArr count]-1)+100) {
+//        [_selectionScrollView scrollRectToVisible:CGRectMake(_selectionScrollView.frame.size.width*0,0,_selectionScrollView.frame.size.width,_selectionScrollView.frame.size.height) animated:NO];
+//    }
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
