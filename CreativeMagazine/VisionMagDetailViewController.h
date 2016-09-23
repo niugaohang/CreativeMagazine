@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class VisionMagDetailModel;
+@class VisionMagModel;
 @interface VisionMagDetailViewController : UIViewController
 
 @property(nonatomic,copy)NSMutableArray *dataArr;
@@ -19,7 +19,7 @@
 
 
 
-@property (nonatomic,strong) VisionMagDetailModel *reModel;
+@property (nonatomic,strong) VisionMagModel *reModel;
 
 
 @end

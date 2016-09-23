@@ -194,7 +194,7 @@
     UIButton *btn=(UIButton *)sender;
     
     
-    VisionMagDetailModel *visionMagDetailModel = [_dataArr objectAtIndex:btn.tag];
+    VisionMagModel *visionMagDetailModel = [_dataArr objectAtIndex:btn.tag];
     
     VisionMagDetailViewController *visionMagDetailVC = [[VisionMagDetailViewController alloc]init];
     visionMagDetailVC.reModel=visionMagDetailModel;
@@ -217,10 +217,10 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     //判断是 第一页
-    if (_selectionScrollView.contentOffset.x<_selectionScrollView.frame.size.width) {
-        NNLog(@"123123123");
-        NNToast(@"已经是第一页了");
-    }
+//    if (_selectionScrollView.contentOffset.x<_selectionScrollView.frame.size.width) {
+//        NNLog(@"123123123");
+//        NNToast(@"已经是第一页了");
+//    }
 }
 //我们移动手指开始
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
@@ -228,6 +228,10 @@
     if (_selectionScrollView.contentOffset.x>=_selectionScrollView.frame.size.width*([self.dataArr count]-1)+50) {
         NNToast(@"已经是最后一页了");
     }
+    if (_selectionScrollView.contentOffset.x<50) {
+        NNToast(@"已经是第一页了");
+    }
+
 }
 //当滚动视图停止
 //- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;{

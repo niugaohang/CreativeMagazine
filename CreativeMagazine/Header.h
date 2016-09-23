@@ -37,8 +37,11 @@
 //画报详情页
 #import "VisionMagDetailViewController.h"
 
-
+//鲜资讯
 #import "NewsViewController.h"
+#import "NewsTableVC.h"
+#import "NewsTableCell.h"
+
 #import "DesignerViewController.h"
 #import "ShoppingViewController.h"
 #import "MoreViewController.h"
@@ -100,10 +103,12 @@
 #define NNRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
 
 //4.设置RGB颜色/设置RGBA颜色
-#define NNRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define NNRGBColor(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define NNRGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]
 // clear背景颜色
 #define NNClearColor [UIColor clearColor]
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 
 //5.自定义高效率的 NSLog
@@ -192,6 +197,6 @@ kWindow.userInteractionEnabled = YES;\
 
 
 #define  NEWVISION_URL @"http://www.wowsai.com/newphone/newvision"
-
+#define  ALLNEWSDATA_URL @"http://www.wowsai.com/newphone/newnews"
 
 #endif /* Header_h */

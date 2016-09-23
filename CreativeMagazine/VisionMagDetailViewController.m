@@ -26,6 +26,11 @@
     _selectIndex = newSelectIndex;
     
 }
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [SVProgressHUD dismiss];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -95,7 +100,10 @@
     [SVProgressHUD dismiss];
     
 }
-
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [SVProgressHUD dismiss];
+}
 
 
 
@@ -158,7 +166,7 @@
          [_nextBtn setImage:[UIImage imageNamed:@"next.png"] forState:UIControlStateNormal];
        
         _selectIndex = _selectIndex -1;
-        VisionMagDetailModel *visionMagDetailModel = [_dataArr objectAtIndex:_selectIndex];
+        VisionMagModel *visionMagDetailModel = [_dataArr objectAtIndex:_selectIndex];
         
         _titleLabel.text = visionMagDetailModel.title;
         
@@ -186,7 +194,7 @@
         
          [_previousBtn setImage:[UIImage imageNamed:@"previous.png"] forState:UIControlStateNormal];
         _selectIndex = _selectIndex +1;
-        VisionMagDetailModel *visionMagDetailModel = [_dataArr objectAtIndex:_selectIndex];
+        VisionMagModel *visionMagDetailModel = [_dataArr objectAtIndex:_selectIndex];
         
         _titleLabel.text = visionMagDetailModel.title;
         

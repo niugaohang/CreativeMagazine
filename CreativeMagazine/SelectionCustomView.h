@@ -14,10 +14,6 @@
 @interface SelectionCustomView : UIView
 
 
-
-
-
-
 @property (nonatomic,retain)UIImageView *titleImgView;
 
 @property(nonatomic,retain)UIButton *shareBtn;

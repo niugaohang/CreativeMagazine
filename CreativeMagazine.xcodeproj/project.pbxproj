@@ -13,7 +13,6 @@
 		4F314F1C1D9374EB00EAFAA3 /* passImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F314F1B1D9374EB00EAFAA3 /* passImage.png */; };
 		4F314F1F1D937E0900EAFAA3 /* ToTopLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F314F1E1D937E0900EAFAA3 /* ToTopLabel.m */; };
 		4F314F221D93BC5500EAFAA3 /* VisionMagDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F314F211D93BC5500EAFAA3 /* VisionMagDetailViewController.m */; };
-		4F314F251D93BCB700EAFAA3 /* VisionMagDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F314F241D93BCB700EAFAA3 /* VisionMagDetailModel.m */; };
 		4F314F2A1D93C00E00EAFAA3 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F314F261D93C00E00EAFAA3 /* first@2x.png */; };
 		4F314F2B1D93C00E00EAFAA3 /* last@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F314F271D93C00E00EAFAA3 /* last@2x.png */; };
 		4F314F2C1D93C00E00EAFAA3 /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F314F281D93C00E00EAFAA3 /* next@2x.png */; };
@@ -46,6 +45,9 @@
 		4F7E2DFA1D92AC0400C5E6E8 /* MyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DF91D92AC0400C5E6E8 /* MyRequest.m */; };
 		4F8285B91D936D0500DA9BFF /* SelectionModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8285B81D936D0500DA9BFF /* SelectionModelList.m */; };
 		4F8285BC1D936ECB00DA9BFF /* SelectionCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */; };
+		4FD4953E1D94FD0600A851AD /* NewsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4953D1D94FD0600A851AD /* NewsTableVC.m */; };
+		4FD495411D9501DD00A851AD /* VisionMagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD495401D9501DD00A851AD /* VisionMagModel.m */; };
+		4FD495441D95089500A851AD /* NewsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD495431D95089500A851AD /* NewsTableCell.m */; };
 		A6B7D2658A4936F8D14989E5 /* libPods-CreativeMagazine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE63E0B4340E85FE1AD8C873 /* libPods-CreativeMagazine.a */; };
 /* End PBXBuildFile section */
 
@@ -70,8 +72,6 @@
 		4F314F1E1D937E0900EAFAA3 /* ToTopLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToTopLabel.m; sourceTree = "<group>"; };
 		4F314F201D93BC5500EAFAA3 /* VisionMagDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionMagDetailViewController.h; sourceTree = "<group>"; };
 		4F314F211D93BC5500EAFAA3 /* VisionMagDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisionMagDetailViewController.m; sourceTree = "<group>"; };
-		4F314F231D93BCB700EAFAA3 /* VisionMagDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionMagDetailModel.h; sourceTree = "<group>"; };
-		4F314F241D93BCB700EAFAA3 /* VisionMagDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisionMagDetailModel.m; sourceTree = "<group>"; };
 		4F314F261D93C00E00EAFAA3 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		4F314F271D93C00E00EAFAA3 /* last@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "last@2x.png"; sourceTree = "<group>"; };
 		4F314F281D93C00E00EAFAA3 /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
@@ -124,6 +124,12 @@
 		4F8285B81D936D0500DA9BFF /* SelectionModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionModelList.m; sourceTree = "<group>"; };
 		4F8285BA1D936ECB00DA9BFF /* SelectionCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionCustomView.h; sourceTree = "<group>"; };
 		4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionCustomView.m; sourceTree = "<group>"; };
+		4FD4953C1D94FD0600A851AD /* NewsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableVC.h; sourceTree = "<group>"; };
+		4FD4953D1D94FD0600A851AD /* NewsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableVC.m; sourceTree = "<group>"; };
+		4FD4953F1D9501DD00A851AD /* VisionMagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionMagModel.h; sourceTree = "<group>"; };
+		4FD495401D9501DD00A851AD /* VisionMagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisionMagModel.m; sourceTree = "<group>"; };
+		4FD495421D95089500A851AD /* NewsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableCell.h; sourceTree = "<group>"; };
+		4FD495431D95089500A851AD /* NewsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableCell.m; sourceTree = "<group>"; };
 		CE63E0B4340E85FE1AD8C873 /* libPods-CreativeMagazine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CreativeMagazine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -207,8 +213,7 @@
 				4F314F361D93DA1C00EAFAA3 /* Tools(工具) */,
 				4F8285BD1D936ED100DA9BFF /* Selection(精选) */,
 				4F314F351D93D9C800EAFAA3 /* VisionMagDetailVC(详情) */,
-				4F7E2DE91D92700900C5E6E8 /* NewsViewController.h */,
-				4F7E2DEA1D92700900C5E6E8 /* NewsViewController.m */,
+				4FD4953B1D94FCD600A851AD /* News(鲜资讯) */,
 				4F7E2DEC1D92707100C5E6E8 /* DesignerViewController.h */,
 				4F7E2DED1D92707100C5E6E8 /* DesignerViewController.m */,
 				4F7E2DEF1D9270BC00C5E6E8 /* ShoppingViewController.h */,
@@ -287,8 +292,8 @@
 				4F8285B61D936D0500DA9BFF /* DataModels.h */,
 				4F8285B71D936D0500DA9BFF /* SelectionModelList.h */,
 				4F8285B81D936D0500DA9BFF /* SelectionModelList.m */,
-				4F314F231D93BCB700EAFAA3 /* VisionMagDetailModel.h */,
-				4F314F241D93BCB700EAFAA3 /* VisionMagDetailModel.m */,
+				4FD4953F1D9501DD00A851AD /* VisionMagModel.h */,
+				4FD495401D9501DD00A851AD /* VisionMagModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,6 +307,19 @@
 				4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */,
 			);
 			name = "Selection(精选)";
+			sourceTree = "<group>";
+		};
+		4FD4953B1D94FCD600A851AD /* News(鲜资讯) */ = {
+			isa = PBXGroup;
+			children = (
+				4F7E2DE91D92700900C5E6E8 /* NewsViewController.h */,
+				4F7E2DEA1D92700900C5E6E8 /* NewsViewController.m */,
+				4FD4953C1D94FD0600A851AD /* NewsTableVC.h */,
+				4FD4953D1D94FD0600A851AD /* NewsTableVC.m */,
+				4FD495421D95089500A851AD /* NewsTableCell.h */,
+				4FD495431D95089500A851AD /* NewsTableCell.m */,
+			);
+			name = "News(鲜资讯)";
 			sourceTree = "<group>";
 		};
 		A0BFB435523609187CB714B4 /* Pods */ = {
@@ -365,6 +383,7 @@
 				TargetAttributes = {
 					4F7E2DA31D9257B900C5E6E8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UWQPN2RE82;
 						ProvisioningStyle = Automatic;
 					};
 					4F7E2DBC1D9257B900C5E6E8 = {
@@ -483,14 +502,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F314F251D93BCB700EAFAA3 /* VisionMagDetailModel.m in Sources */,
 				4F7E2DAC1D9257B900C5E6E8 /* AppDelegate.m in Sources */,
 				4F7E2DF11D9270BC00C5E6E8 /* ShoppingViewController.m in Sources */,
 				4F7E2DE81D926FA700C5E6E8 /* BaseNavigationViewController.m in Sources */,
+				4FD495441D95089500A851AD /* NewsTableCell.m in Sources */,
 				4F314F1F1D937E0900EAFAA3 /* ToTopLabel.m in Sources */,
+				4FD495411D9501DD00A851AD /* VisionMagModel.m in Sources */,
 				4F7E2DCE1D925FAC00C5E6E8 /* BootViewController.m in Sources */,
 				4F7E2DEE1D92707100C5E6E8 /* DesignerViewController.m in Sources */,
 				4F7E2DD51D926CFD00C5E6E8 /* NTViewController.m in Sources */,
+				4FD4953E1D94FD0600A851AD /* NewsTableVC.m in Sources */,
 				4F7E2DA91D9257B900C5E6E8 /* main.m in Sources */,
 				4F7E2DF71D92722A00C5E6E8 /* NTButton.m in Sources */,
 				4F314F221D93BC5500EAFAA3 /* VisionMagDetailViewController.m in Sources */,
@@ -635,6 +656,7 @@
 			baseConfigurationReference = 0CC10F5BD2AD1B221E66040F /* Pods-CreativeMagazine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UWQPN2RE82;
 				INFOPLIST_FILE = CreativeMagazine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -648,6 +670,7 @@
 			baseConfigurationReference = 067F5F668C3D3CAA49B9B176 /* Pods-CreativeMagazine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UWQPN2RE82;
 				INFOPLIST_FILE = CreativeMagazine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

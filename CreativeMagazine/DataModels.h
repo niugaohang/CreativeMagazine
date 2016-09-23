@@ -6,4 +6,4 @@
 //
 
 #import "SelectionModelList.h"
-#import "VisionMagDetailModel.h"
+#import "VisionMagModel.h"
