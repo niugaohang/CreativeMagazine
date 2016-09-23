@@ -51,6 +51,7 @@
         _dataArray=self.dataArr;
         [self initView];
         [_tableView reloadData];
+        [SVProgressHUD dismiss];
     }
 }
 -(void)initView {
