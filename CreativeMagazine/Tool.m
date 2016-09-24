@@ -14,7 +14,7 @@
 
 +(void)initWithNavViewWith:(NSString *)titleName leftIteamHidden:(BOOL)hidden selfView:(UIViewController *)selfView
 {
-    selfView.view.backgroundColor=NNRGBAColor(235.0, 235.0, 235.0, 1);
+    selfView.view.backgroundColor=NNRGBColor(235.0);
 
     //    导航条
     selfView.automaticallyAdjustsScrollViewInsets=NO;
@@ -40,7 +40,9 @@
     selfView.navigationItem.titleView = titleLabel;
     
 
-    [selfView.navigationController.navigationBar setBarTintColor:NNRGBAColor(35.0, 131.0, 221.0, 1.0)];
+    [selfView.navigationController.navigationBar setBarTintColor:NNRGBColor(35)];
+    
+   
     
 }
 -(void)backTopVC

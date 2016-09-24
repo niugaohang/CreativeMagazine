@@ -106,18 +106,18 @@
         [button setFrame:CGRectMake(xOffset+(xOffset+size.width)*i,0,size.width, 44)];
         //计算下一个tab的x偏移量
 //        xOffset += size.width +xOffset;
-        [button setTitleColor:NNRGBAColor(144,144,144,1) forState:UIControlStateNormal];
+        [button setTitleColor:NNRGBColor(144) forState:UIControlStateNormal];
         button.tag = i;
         [button addTarget:self action:@selector(titleZiXunBtn:) forControlEvents:UIControlEventTouchUpInside];
         [_titleScroller addSubview:button];
         //改变第一个按钮默认颜色
         if (i == 0) {
-            [button setTitleColor:NNRGBAColor(35,131, 221, 1.0) forState:UIControlStateNormal];
+            [button setTitleColor:NNRGBColor(35) forState:UIControlStateNormal];
             //红线
             _flagLab = [[UILabel alloc] init];
             _flagLab.center = CGPointMake(button.center.x, button.bounds.size.height-3);
             _flagLab.bounds=CGRectMake(0, 0, size.width, 2);
-            _flagLab.backgroundColor = NNRGBAColor(35,131, 221, 1.0);
+            _flagLab.backgroundColor = NNRGBColor(35);
         }
         
         if (i==_titleArray.count-1)
@@ -282,10 +282,10 @@
         if ([obj isKindOfClass:[UIButton class]]) {
             UIButton *button = (UIButton *)obj;
             //复原未被点击按钮颜色
-            [obj setTitleColor:NNRGBAColor(144.0, 144.0, 144.0, 1.0) forState:UIControlStateNormal];
+            [obj setTitleColor:NNRGBColor(144.0) forState:UIControlStateNormal];
             if (button.tag == index) {
                 //更改被点击按钮颜色
-                [button setTitleColor:NNRGBAColor(35,131, 221, 1.0) forState:UIControlStateNormal];
+                [button setTitleColor:NNRGBColor(35) forState:UIControlStateNormal];
                 [UIView beginAnimations:nil context:nil];
                 [UIView setAnimationDuration:0.5];
                 
@@ -308,11 +308,11 @@
     NSArray *array = sender.superview.subviews;
     for (id obj in array) {
         if ([obj isKindOfClass:[UIButton class]]) {
-            [obj setTitleColor:NNRGBAColor(144.0, 144.0, 144.0, 1.0) forState:UIControlStateNormal];
+            [obj setTitleColor:NNRGBColor(144.0) forState:UIControlStateNormal];
         }
     }
     //更改被点击按钮颜色
-    [sender setTitleColor:NNRGBAColor(35,131, 221, 1.0) forState:UIControlStateNormal];
+    [sender setTitleColor:NNRGBColor(35) forState:UIControlStateNormal];
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.5];
     NSString *str = sender.titleLabel.text;

@@ -75,7 +75,7 @@ static const CGFloat S_WASD = 15.f;   // 上下左右间距
     //添加边框
     _imgView.frame=CGRectMake(S_WASD,S_WASD,VIEW_WIDTH-30,(VIEW_WIDTH-30)/(imgW/imgH));
     CALayer * layer = [_imgView layer];
-    layer.borderColor = NNRGBColor(236, 236, 236).CGColor;
+    layer.borderColor = NNRGBColor(236).CGColor;
     layer.borderWidth = 0.5f;
     
 
@@ -145,7 +145,7 @@ static const CGFloat S_WASD = 15.f;   // 上下左右间距
     //添加边框
     _imgView.frame=CGRectMake(S_WASD,S_WASD,VIEW_WIDTH-30,(VIEW_WIDTH-30)/(imgW/imgH));
     CALayer * layer = [_imgView layer];
-    layer.borderColor = NNRGBColor(236, 236, 236).CGColor;
+    layer.borderColor = NNRGBColor(236).CGColor;
     layer.borderWidth = 0.5f;
     
     

@@ -61,7 +61,7 @@
        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0,self.view.frame.size.width , self.view.frame.size.height) style:UITableViewStylePlain];
     }
     
-    _tableView.showsVerticalScrollIndicator=NO;
+    _tableView.showsVerticalScrollIndicator=YES;
     _tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     
     _tableView.delegate = self;

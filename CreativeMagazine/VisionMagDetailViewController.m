@@ -47,7 +47,7 @@
 
 -(void)initNavView
 {
-    self.view.backgroundColor=NNRGBAColor(235.0, 235.0, 235.0, 1);
+    self.view.backgroundColor=NNRGBColor(235.0);
     //    导航条
     self.automaticallyAdjustsScrollViewInsets=NO;
     
@@ -67,7 +67,7 @@
     _titleLabel.text = self.reModel.title;
     self.navigationItem.titleView = _titleLabel;
     
-    [self.navigationController.navigationBar setBarTintColor:NNRGBAColor(35.0, 131.0, 221.0, 1.0)];
+    [self.navigationController.navigationBar setBarTintColor:NNRGBColor(35.0)];
 }
 
 -(void)initWebView
