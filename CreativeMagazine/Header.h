@@ -25,6 +25,8 @@
 #import "Tool.h"
 //Model类
 #import "DataModels.h"
+#import "MJRefresh.h"
+#import "UIView+FBDQuickCreateUI.h"
 
 //lab距顶
 #import "ToTopLabel.h"
@@ -44,6 +46,11 @@
 
 #import "DesignerViewController.h"
 #import "ShoppingViewController.h"
+#import "CommodityView.h"
+#import "CommodityViewBL.h"
+#import "CommodityCell.h"
+#import "CategoryView.h"
+
 #import "MoreViewController.h"
 
 
@@ -204,5 +211,8 @@ kWindow.userInteractionEnabled = YES;\
 
 #define  DESIGNERS_URL @"http://www.wowsai.com/newphone/newdesigner"
 
+#define  SHOPPINGNEWGOODS_URL @"http://www.wowsai.com/index.php?app=shopping&act=newgoods&phone=1"
 
+#define  HOTSHOPPING_URL @"http://www.wowsai.com/index.php?app=shopping&act=ranking&phone=1"
+#define  CATEGORYLIST_URL @"http://www.wowsai.com/index.php?app=shopping&act=phone_getgcategory"
 #endif /* Header_h */

@@ -7,3 +7,5 @@
 
 #import "SelectionModelList.h"
 #import "VisionMagModel.h"
+#import "ShoppingModelBaseClass.h"
+#import "CategoryListBaseClass.h"

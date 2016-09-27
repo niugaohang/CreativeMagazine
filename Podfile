@@ -4,4 +4,6 @@ pod 'Toast', '~> 3.0'
 pod 'AFNetworking', '~> 3.0.4'
 pod 'SDWebImage', '~>3.8'
 pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
+pod 'MJRefresh'
+pod 'FBDTools', '~> 0.1'
 end

@@ -45,6 +45,13 @@
 		4F7E2DFA1D92AC0400C5E6E8 /* MyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DF91D92AC0400C5E6E8 /* MyRequest.m */; };
 		4F8285B91D936D0500DA9BFF /* SelectionModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8285B81D936D0500DA9BFF /* SelectionModelList.m */; };
 		4F8285BC1D936ECB00DA9BFF /* SelectionCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */; };
+		4F9499BE1D9A45C100F57A57 /* CommodityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499BD1D9A45C100F57A57 /* CommodityView.m */; };
+		4F9499C11D9A4C1200F57A57 /* CommodityViewBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499C01D9A4C1200F57A57 /* CommodityViewBL.m */; };
+		4F9499C41D9A4E8E00F57A57 /* ShoppingModelBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499C31D9A4E8E00F57A57 /* ShoppingModelBaseClass.m */; };
+		4F9499C71D9A521100F57A57 /* CommodityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499C61D9A521100F57A57 /* CommodityCell.m */; };
+		4F9499C91D9A5CA800F57A57 /* price@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F9499C81D9A5CA800F57A57 /* price@2x.png */; };
+		4F9499CC1D9A6B2600F57A57 /* CategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499CB1D9A6B2600F57A57 /* CategoryView.m */; };
+		4F9499D21D9A6CBC00F57A57 /* CategoryListBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499D01D9A6CBC00F57A57 /* CategoryListBaseClass.m */; };
 		4FD4953E1D94FD0600A851AD /* NewsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4953D1D94FD0600A851AD /* NewsTableVC.m */; };
 		4FD495411D9501DD00A851AD /* VisionMagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD495401D9501DD00A851AD /* VisionMagModel.m */; };
 		4FD495441D95089500A851AD /* NewsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD495431D95089500A851AD /* NewsTableCell.m */; };
@@ -125,6 +132,19 @@
 		4F8285B81D936D0500DA9BFF /* SelectionModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionModelList.m; sourceTree = "<group>"; };
 		4F8285BA1D936ECB00DA9BFF /* SelectionCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionCustomView.h; sourceTree = "<group>"; };
 		4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionCustomView.m; sourceTree = "<group>"; };
+		4F9499BC1D9A45C100F57A57 /* CommodityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityView.h; sourceTree = "<group>"; };
+		4F9499BD1D9A45C100F57A57 /* CommodityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityView.m; sourceTree = "<group>"; };
+		4F9499BF1D9A4C1200F57A57 /* CommodityViewBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityViewBL.h; sourceTree = "<group>"; };
+		4F9499C01D9A4C1200F57A57 /* CommodityViewBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityViewBL.m; sourceTree = "<group>"; };
+		4F9499C21D9A4E8E00F57A57 /* ShoppingModelBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingModelBaseClass.h; sourceTree = "<group>"; };
+		4F9499C31D9A4E8E00F57A57 /* ShoppingModelBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingModelBaseClass.m; sourceTree = "<group>"; };
+		4F9499C51D9A521100F57A57 /* CommodityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityCell.h; sourceTree = "<group>"; };
+		4F9499C61D9A521100F57A57 /* CommodityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityCell.m; sourceTree = "<group>"; };
+		4F9499C81D9A5CA800F57A57 /* price@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "price@2x.png"; sourceTree = "<group>"; };
+		4F9499CA1D9A6B2600F57A57 /* CategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryView.h; sourceTree = "<group>"; };
+		4F9499CB1D9A6B2600F57A57 /* CategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryView.m; sourceTree = "<group>"; };
+		4F9499D01D9A6CBC00F57A57 /* CategoryListBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListBaseClass.m; sourceTree = "<group>"; };
+		4F9499D11D9A6CBC00F57A57 /* CategoryListBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListBaseClass.h; sourceTree = "<group>"; };
 		4FD4953C1D94FD0600A851AD /* NewsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableVC.h; sourceTree = "<group>"; };
 		4FD4953D1D94FD0600A851AD /* NewsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableVC.m; sourceTree = "<group>"; };
 		4FD4953F1D9501DD00A851AD /* VisionMagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionMagModel.h; sourceTree = "<group>"; };
@@ -216,10 +236,10 @@
 				4F8285BD1D936ED100DA9BFF /* Selection(精选) */,
 				4F314F351D93D9C800EAFAA3 /* VisionMagDetailVC(详情) */,
 				4FD4953B1D94FCD600A851AD /* News(鲜资讯) */,
-				4F7E2DEC1D92707100C5E6E8 /* DesignerViewController.h */,
-				4F7E2DED1D92707100C5E6E8 /* DesignerViewController.m */,
-				4F7E2DEF1D9270BC00C5E6E8 /* ShoppingViewController.h */,
-				4F7E2DF01D9270BC00C5E6E8 /* ShoppingViewController.m */,
+				4F9499CD1D9A6C2400F57A57 /* Designer(设计师) */,
+				4F9499CE1D9A6C4500F57A57 /* Shopping(购创意) */,
+				4F9499CA1D9A6B2600F57A57 /* CategoryView.h */,
+				4F9499CB1D9A6B2600F57A57 /* CategoryView.m */,
 				4F7E2DF21D9270CD00C5E6E8 /* MoreViewController.h */,
 				4F7E2DF31D9270CD00C5E6E8 /* MoreViewController.m */,
 				4F7E2DB01D9257B900C5E6E8 /* Main.storyboard */,
@@ -252,6 +272,7 @@
 		4F7E2DD01D92669700C5E6E8 /* 2x */ = {
 			isa = PBXGroup;
 			children = (
+				4F9499C81D9A5CA800F57A57 /* price@2x.png */,
 				4FFA4E2B1D9569E3000805BB /* Icon@2x.png */,
 				4F314F331D93C7BD00EAFAA3 /* nav_backgroud@2x.png */,
 				4F314F2E1D93C35700EAFAA3 /* return@2x.png */,
@@ -292,6 +313,10 @@
 		4F8285B51D936CF900DA9BFF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F9499D01D9A6CBC00F57A57 /* CategoryListBaseClass.m */,
+				4F9499D11D9A6CBC00F57A57 /* CategoryListBaseClass.h */,
+				4F9499C21D9A4E8E00F57A57 /* ShoppingModelBaseClass.h */,
+				4F9499C31D9A4E8E00F57A57 /* ShoppingModelBaseClass.m */,
 				4F8285B61D936D0500DA9BFF /* DataModels.h */,
 				4F8285B71D936D0500DA9BFF /* SelectionModelList.h */,
 				4F8285B81D936D0500DA9BFF /* SelectionModelList.m */,
@@ -310,6 +335,38 @@
 				4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */,
 			);
 			name = "Selection(精选)";
+			sourceTree = "<group>";
+		};
+		4F9499CD1D9A6C2400F57A57 /* Designer(设计师) */ = {
+			isa = PBXGroup;
+			children = (
+				4F7E2DEC1D92707100C5E6E8 /* DesignerViewController.h */,
+				4F7E2DED1D92707100C5E6E8 /* DesignerViewController.m */,
+			);
+			name = "Designer(设计师)";
+			sourceTree = "<group>";
+		};
+		4F9499CE1D9A6C4500F57A57 /* Shopping(购创意) */ = {
+			isa = PBXGroup;
+			children = (
+				4F7E2DEF1D9270BC00C5E6E8 /* ShoppingViewController.h */,
+				4F7E2DF01D9270BC00C5E6E8 /* ShoppingViewController.m */,
+				4F9499CF1D9A6C8300F57A57 /* Commodity(商品列表) */,
+			);
+			name = "Shopping(购创意)";
+			sourceTree = "<group>";
+		};
+		4F9499CF1D9A6C8300F57A57 /* Commodity(商品列表) */ = {
+			isa = PBXGroup;
+			children = (
+				4F9499BC1D9A45C100F57A57 /* CommodityView.h */,
+				4F9499BD1D9A45C100F57A57 /* CommodityView.m */,
+				4F9499BF1D9A4C1200F57A57 /* CommodityViewBL.h */,
+				4F9499C01D9A4C1200F57A57 /* CommodityViewBL.m */,
+				4F9499C51D9A521100F57A57 /* CommodityCell.h */,
+				4F9499C61D9A521100F57A57 /* CommodityCell.m */,
+			);
+			name = "Commodity(商品列表)";
 			sourceTree = "<group>";
 		};
 		4FD4953B1D94FCD600A851AD /* News(鲜资讯) */ = {
@@ -434,6 +491,7 @@
 				4F314F341D93C7BD00EAFAA3 /* nav_backgroud@2x.png in Resources */,
 				4F314F1A1D93746700EAFAA3 /* notfound@2x.png in Resources */,
 				4F314F181D93743D00EAFAA3 /* share@2x.png in Resources */,
+				4F9499C91D9A5CA800F57A57 /* price@2x.png in Resources */,
 				4F314F1C1D9374EB00EAFAA3 /* passImage.png in Resources */,
 				4F314F2C1D93C00E00EAFAA3 /* next@2x.png in Resources */,
 				4FFA4E2C1D9569E3000805BB /* Icon@2x.png in Resources */,
@@ -509,7 +567,10 @@
 				4F7E2DAC1D9257B900C5E6E8 /* AppDelegate.m in Sources */,
 				4F7E2DF11D9270BC00C5E6E8 /* ShoppingViewController.m in Sources */,
 				4F7E2DE81D926FA700C5E6E8 /* BaseNavigationViewController.m in Sources */,
+				4F9499D21D9A6CBC00F57A57 /* CategoryListBaseClass.m in Sources */,
 				4FD495441D95089500A851AD /* NewsTableCell.m in Sources */,
+				4F9499C11D9A4C1200F57A57 /* CommodityViewBL.m in Sources */,
+				4F9499C41D9A4E8E00F57A57 /* ShoppingModelBaseClass.m in Sources */,
 				4F314F1F1D937E0900EAFAA3 /* ToTopLabel.m in Sources */,
 				4FD495411D9501DD00A851AD /* VisionMagModel.m in Sources */,
 				4F7E2DCE1D925FAC00C5E6E8 /* BootViewController.m in Sources */,
@@ -523,9 +584,12 @@
 				4F7E2DFA1D92AC0400C5E6E8 /* MyRequest.m in Sources */,
 				4F8285BC1D936ECB00DA9BFF /* SelectionCustomView.m in Sources */,
 				4F8285B91D936D0500DA9BFF /* SelectionModelList.m in Sources */,
+				4F9499BE1D9A45C100F57A57 /* CommodityView.m in Sources */,
 				4F314F321D93C45700EAFAA3 /* Tool.m in Sources */,
+				4F9499CC1D9A6B2600F57A57 /* CategoryView.m in Sources */,
 				4F7E2DEB1D92700900C5E6E8 /* NewsViewController.m in Sources */,
 				4F7E2DF41D9270CD00C5E6E8 /* MoreViewController.m in Sources */,
+				4F9499C71D9A521100F57A57 /* CommodityCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
