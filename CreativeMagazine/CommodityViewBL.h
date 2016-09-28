@@ -15,5 +15,5 @@ typedef void(^MyArticleBLSuccessed)(id obj);
 -(void)getCommodityViewWithStatus:(NSString *)status Type:(NSString *)type GoodsID:(NSString *)goodsid  withSuccessedBlock:(MyArticleBLSuccessed)success;
 
 
-
+-(void)getCategoryCommodityViewWithStatus:(NSString *)status Cateid:(NSString *)cateid GoodsID:(NSString *)goodsid  withSuccessedBlock:(MyArticleBLSuccessed)success;
 @end

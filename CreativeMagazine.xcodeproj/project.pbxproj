@@ -45,6 +45,8 @@
 		4F7E2DFA1D92AC0400C5E6E8 /* MyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E2DF91D92AC0400C5E6E8 /* MyRequest.m */; };
 		4F8285B91D936D0500DA9BFF /* SelectionModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8285B81D936D0500DA9BFF /* SelectionModelList.m */; };
 		4F8285BC1D936ECB00DA9BFF /* SelectionCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */; };
+		4F8CB4A91D9B89B000180842 /* TBSaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB4A81D9B89B000180842 /* TBSaleView.m */; };
+		4F8CB4AC1D9B90CC00180842 /* CommodityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB4AB1D9B90CC00180842 /* CommodityDetailViewController.m */; };
 		4F9499BE1D9A45C100F57A57 /* CommodityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499BD1D9A45C100F57A57 /* CommodityView.m */; };
 		4F9499C11D9A4C1200F57A57 /* CommodityViewBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499C01D9A4C1200F57A57 /* CommodityViewBL.m */; };
 		4F9499C41D9A4E8E00F57A57 /* ShoppingModelBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499C31D9A4E8E00F57A57 /* ShoppingModelBaseClass.m */; };
@@ -52,6 +54,7 @@
 		4F9499C91D9A5CA800F57A57 /* price@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F9499C81D9A5CA800F57A57 /* price@2x.png */; };
 		4F9499CC1D9A6B2600F57A57 /* CategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499CB1D9A6B2600F57A57 /* CategoryView.m */; };
 		4F9499D21D9A6CBC00F57A57 /* CategoryListBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499D01D9A6CBC00F57A57 /* CategoryListBaseClass.m */; };
+		4FD41E601D9B73F700BD2896 /* CategorySubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD41E5F1D9B73F700BD2896 /* CategorySubViewController.m */; };
 		4FD4953E1D94FD0600A851AD /* NewsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4953D1D94FD0600A851AD /* NewsTableVC.m */; };
 		4FD495411D9501DD00A851AD /* VisionMagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD495401D9501DD00A851AD /* VisionMagModel.m */; };
 		4FD495441D95089500A851AD /* NewsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD495431D95089500A851AD /* NewsTableCell.m */; };
@@ -132,6 +135,10 @@
 		4F8285B81D936D0500DA9BFF /* SelectionModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionModelList.m; sourceTree = "<group>"; };
 		4F8285BA1D936ECB00DA9BFF /* SelectionCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionCustomView.h; sourceTree = "<group>"; };
 		4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionCustomView.m; sourceTree = "<group>"; };
+		4F8CB4A71D9B89B000180842 /* TBSaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSaleView.h; sourceTree = "<group>"; };
+		4F8CB4A81D9B89B000180842 /* TBSaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSaleView.m; sourceTree = "<group>"; };
+		4F8CB4AA1D9B90CC00180842 /* CommodityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityDetailViewController.h; sourceTree = "<group>"; };
+		4F8CB4AB1D9B90CC00180842 /* CommodityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityDetailViewController.m; sourceTree = "<group>"; };
 		4F9499BC1D9A45C100F57A57 /* CommodityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityView.h; sourceTree = "<group>"; };
 		4F9499BD1D9A45C100F57A57 /* CommodityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityView.m; sourceTree = "<group>"; };
 		4F9499BF1D9A4C1200F57A57 /* CommodityViewBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityViewBL.h; sourceTree = "<group>"; };
@@ -145,6 +152,8 @@
 		4F9499CB1D9A6B2600F57A57 /* CategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryView.m; sourceTree = "<group>"; };
 		4F9499D01D9A6CBC00F57A57 /* CategoryListBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListBaseClass.m; sourceTree = "<group>"; };
 		4F9499D11D9A6CBC00F57A57 /* CategoryListBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListBaseClass.h; sourceTree = "<group>"; };
+		4FD41E5E1D9B73F700BD2896 /* CategorySubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategorySubViewController.h; sourceTree = "<group>"; };
+		4FD41E5F1D9B73F700BD2896 /* CategorySubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategorySubViewController.m; sourceTree = "<group>"; };
 		4FD4953C1D94FD0600A851AD /* NewsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableVC.h; sourceTree = "<group>"; };
 		4FD4953D1D94FD0600A851AD /* NewsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableVC.m; sourceTree = "<group>"; };
 		4FD4953F1D9501DD00A851AD /* VisionMagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionMagModel.h; sourceTree = "<group>"; };
@@ -238,8 +247,6 @@
 				4FD4953B1D94FCD600A851AD /* News(鲜资讯) */,
 				4F9499CD1D9A6C2400F57A57 /* Designer(设计师) */,
 				4F9499CE1D9A6C4500F57A57 /* Shopping(购创意) */,
-				4F9499CA1D9A6B2600F57A57 /* CategoryView.h */,
-				4F9499CB1D9A6B2600F57A57 /* CategoryView.m */,
 				4F7E2DF21D9270CD00C5E6E8 /* MoreViewController.h */,
 				4F7E2DF31D9270CD00C5E6E8 /* MoreViewController.m */,
 				4F7E2DB01D9257B900C5E6E8 /* Main.storyboard */,
@@ -337,6 +344,17 @@
 			name = "Selection(精选)";
 			sourceTree = "<group>";
 		};
+		4F8CB4AD1D9B934600180842 /* TBTJ(特价+商品详情) */ = {
+			isa = PBXGroup;
+			children = (
+				4F8CB4A71D9B89B000180842 /* TBSaleView.h */,
+				4F8CB4A81D9B89B000180842 /* TBSaleView.m */,
+				4F8CB4AA1D9B90CC00180842 /* CommodityDetailViewController.h */,
+				4F8CB4AB1D9B90CC00180842 /* CommodityDetailViewController.m */,
+			);
+			name = "TBTJ(特价+商品详情)";
+			sourceTree = "<group>";
+		};
 		4F9499CD1D9A6C2400F57A57 /* Designer(设计师) */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,7 +369,9 @@
 			children = (
 				4F7E2DEF1D9270BC00C5E6E8 /* ShoppingViewController.h */,
 				4F7E2DF01D9270BC00C5E6E8 /* ShoppingViewController.m */,
+				4F8CB4AD1D9B934600180842 /* TBTJ(特价+商品详情) */,
 				4F9499CF1D9A6C8300F57A57 /* Commodity(商品列表) */,
+				4FD41E611D9B878A00BD2896 /* Category(类别) */,
 			);
 			name = "Shopping(购创意)";
 			sourceTree = "<group>";
@@ -367,6 +387,17 @@
 				4F9499C61D9A521100F57A57 /* CommodityCell.m */,
 			);
 			name = "Commodity(商品列表)";
+			sourceTree = "<group>";
+		};
+		4FD41E611D9B878A00BD2896 /* Category(类别) */ = {
+			isa = PBXGroup;
+			children = (
+				4F9499CA1D9A6B2600F57A57 /* CategoryView.h */,
+				4F9499CB1D9A6B2600F57A57 /* CategoryView.m */,
+				4FD41E5E1D9B73F700BD2896 /* CategorySubViewController.h */,
+				4FD41E5F1D9B73F700BD2896 /* CategorySubViewController.m */,
+			);
+			name = "Category(类别)";
 			sourceTree = "<group>";
 		};
 		4FD4953B1D94FCD600A851AD /* News(鲜资讯) */ = {
@@ -569,7 +600,9 @@
 				4F7E2DE81D926FA700C5E6E8 /* BaseNavigationViewController.m in Sources */,
 				4F9499D21D9A6CBC00F57A57 /* CategoryListBaseClass.m in Sources */,
 				4FD495441D95089500A851AD /* NewsTableCell.m in Sources */,
+				4F8CB4A91D9B89B000180842 /* TBSaleView.m in Sources */,
 				4F9499C11D9A4C1200F57A57 /* CommodityViewBL.m in Sources */,
+				4FD41E601D9B73F700BD2896 /* CategorySubViewController.m in Sources */,
 				4F9499C41D9A4E8E00F57A57 /* ShoppingModelBaseClass.m in Sources */,
 				4F314F1F1D937E0900EAFAA3 /* ToTopLabel.m in Sources */,
 				4FD495411D9501DD00A851AD /* VisionMagModel.m in Sources */,
@@ -585,6 +618,7 @@
 				4F8285BC1D936ECB00DA9BFF /* SelectionCustomView.m in Sources */,
 				4F8285B91D936D0500DA9BFF /* SelectionModelList.m in Sources */,
 				4F9499BE1D9A45C100F57A57 /* CommodityView.m in Sources */,
+				4F8CB4AC1D9B90CC00180842 /* CommodityDetailViewController.m in Sources */,
 				4F314F321D93C45700EAFAA3 /* Tool.m in Sources */,
 				4F9499CC1D9A6B2600F57A57 /* CategoryView.m in Sources */,
 				4F7E2DEB1D92700900C5E6E8 /* NewsViewController.m in Sources */,

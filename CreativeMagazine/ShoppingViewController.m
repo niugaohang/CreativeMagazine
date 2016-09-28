@@ -24,7 +24,9 @@
 //类目
 @property (nonatomic,strong)CategoryView *categoryView;
 @property (nonatomic,strong)NSMutableArray*categoryListArr;
-
+//特价
+@property (nonatomic,strong)TBSaleView *tbSaleView;
+@property (nonatomic,strong)UIWebView *tbWebView;
 
 @end
 
@@ -47,9 +49,7 @@
     [self initSegView];
     
     
-    [self.view addSubview:self.commodityView];
 
-    
     self.commodityListArr=[NSMutableArray array];
     
     self.categoryListArr=[NSMutableArray array];
@@ -105,7 +105,6 @@
     //类目
     UITableView* categoryView=[self.categoryView getMyListTableView];
     
-    
     [categoryView setMj_header:[MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [SVProgressHUD showWithStatus:@"正在加载数据"];
         [self.commodityViewBL getCommodityViewWithStatus:@"up" Type:_type GoodsID:@"" withSuccessedBlock:^(id obj) {
@@ -123,6 +122,8 @@
         }];
         
     }]];
+    
+    
     
     [self requestWithTheData:@"0"];
 }
@@ -191,29 +192,63 @@
     UITableView*commodityListView=[self.commodityView getMyListTableView];
     if ([typeStr isEqualToString:@"0"])
     {
+        for (UIView *obj in [self.view subviews])
+        {
+            if (obj.tag==101||obj.tag==102)
+            {
+                [obj removeFromSuperview];
+            }
+            
+        }
+        [self.view addSubview:self.commodityView];
         _type=@"new";
         [commodityListView.mj_header beginRefreshing];
     }
     else if([typeStr isEqualToString:@"1"])
     {
+        for (UIView *obj in [self.view subviews])
+        {
+            if (obj.tag==101||obj.tag==102)
+            {
+                [obj removeFromSuperview];
+            }
+            
+        }
+        [self.view addSubview:self.commodityView];
         _type=@"hot";
         [commodityListView.mj_header beginRefreshing];
     }
     else if([typeStr isEqualToString:@"2"])
     {
-        
+        for (UIView *obj in [self.view subviews])
+        {
+            if (obj.tag==101||obj.tag==100)
+            {
+                [obj removeFromSuperview];
+            }
+            
+        }
+        _tbWebView=[self.tbSaleView getTaobaoSaleView];
+        [self.tbSaleView getTaobaoSaleViewSetUrl:@"http://www.taobao.com"];
+        [self.view addSubview:_tbWebView];
     }
     else if([typeStr isEqualToString:@"3"])
     {
         UITableView* categoryView=[self.categoryView getMyListTableView];
         _type=@"cate";
         [categoryView.mj_header beginRefreshing];
-        
+        for (UIView *obj in [self.view subviews])
+        {
+            if (obj.tag==100||obj.tag==102)
+            {
+                [obj removeFromSuperview];
+            }
+            
+        }
         //类目
         [self.view addSubview:self.categoryView];
     }
-    
-    
+
 }
 
 -(CommodityView*)commodityView
@@ -223,7 +258,7 @@
     {
         _commodityView=[[CommodityView alloc] initWithFrame:CGRectMake(0, 64+44, VIEW_WIDTH, VIEW_HEIGHT-64-44-49)];
         _commodityView.backgroundColor=[UIColor lightGrayColor];
-        
+        _commodityView.tag=100;
         [_commodityView myArticleViewDidSelectRowIndexPath:^(NSIndexPath *indexPath) {
             
             
@@ -231,10 +266,10 @@
             {
                 ShoppingModelBaseClass *resultModel= [_commodityListArr objectAtIndex:indexPath.row];
                 NNLog(@"0------%@",resultModel);
-//                CKWX_DetailViewController *detailVC=[[CKWX_DetailViewController alloc]init];
-//                detailVC.wxId=resultModel.internalBaseClassIdentifier;
-//                detailVC.wxType=@"1";
-//                [self.navigationController pushViewController:detailVC animated:YES];
+                CommodityDetailViewController *detailVC=[[CommodityDetailViewController alloc]init];
+                detailVC.goodsname=resultModel.goodsname;
+                detailVC.CommodityUrl=resultModel.url;
+                [self.navigationController pushViewController:detailVC animated:YES];
                 
             }
             
@@ -252,18 +287,18 @@
     {
         _categoryView=[[CategoryView alloc] initWithFrame:CGRectMake(0, 64+44, VIEW_WIDTH, VIEW_HEIGHT-64-44-49)];
         _categoryView.backgroundColor=[UIColor lightGrayColor];
-        
+        _categoryView.tag=101;
         [_categoryView myArticleViewDidSelectRowIndexPath:^(NSIndexPath *indexPath) {
             
             
             if (_commodityListArr.count != 0)
             {
-                ShoppingModelBaseClass *resultModel= [_commodityListArr objectAtIndex:indexPath.row];
+                CategoryListBaseClass *resultModel= [_categoryListArr objectAtIndex:indexPath.row];
                 NNLog(@"0------%@",resultModel);
-                //                CKWX_DetailViewController *detailVC=[[CKWX_DetailViewController alloc]init];
-                //                detailVC.wxId=resultModel.internalBaseClassIdentifier;
-                //                detailVC.wxType=@"1";
-                //                [self.navigationController pushViewController:detailVC animated:YES];
+                CategorySubViewController *detailVC=[[CategorySubViewController alloc]init];
+                detailVC.cateid=resultModel.cateid;
+                detailVC.catename=resultModel.catename;
+                [self.navigationController pushViewController:detailVC animated:YES];
                 
             }
             
@@ -273,6 +308,21 @@
     }
     return _categoryView;
 }
+
+-(TBSaleView*)tbSaleView
+{
+    
+    if (!_tbSaleView)
+    {
+        _tbSaleView=[[TBSaleView alloc] initWithFrame:CGRectMake(0, 64+44, VIEW_WIDTH, VIEW_HEIGHT-64-44-49)];
+        _tbSaleView.backgroundColor=[UIColor whiteColor];
+        _tbSaleView.tag=102;
+    }
+    return _tbSaleView;
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

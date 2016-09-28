@@ -61,13 +61,19 @@ static const CGFloat S_WASD = 30.f;   // 上下左右间距
     
     
     [_imgView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"notfound.png"]];
-    float imgW= [_reModel.width floatValue];
-    float imgH=  [_reModel.height floatValue];
-    
-    
-    NSLog(@"----%f",imgW/imgH);
-    //添加边框
-    _imgView.frame=CGRectMake(S_WASD,15,VIEW_WIDTH-60,(VIEW_WIDTH-60)/(imgW/imgH));
+    if (_reModel.width)
+    {
+        float imgW= [_reModel.width floatValue];
+        float imgH=  [_reModel.height floatValue];
+        //添加边框
+        _imgView.frame=CGRectMake(S_WASD,15,VIEW_WIDTH-60,(VIEW_WIDTH-60)/(imgW/imgH));
+    }
+    else{
+        float imgW=560;
+        float imgH=  560;
+        //添加边框
+        _imgView.frame=CGRectMake(S_WASD,15,VIEW_WIDTH-60,(VIEW_WIDTH-60)/(imgW/imgH));
+    }
 //    CALayer * layer = [_imgView layer];
 //    layer.borderColor = NNRGBColor(236).CGColor;
 //    layer.borderWidth = 0.5f;
@@ -112,12 +118,20 @@ static const CGFloat S_WASD = 30.f;   // 上下左右间距
 {
     NSURL *url=[NSURL URLWithString:aModel.goodsimage];    //        NSLog(@"----%@",arr);
     [_imgView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"notfound.png"]];
-    float imgW= [aModel.width floatValue];
-    float imgH=  [aModel.height floatValue];
+    if (aModel.width)
+    {
+        float imgW= [aModel.width floatValue];
+        float imgH=  [aModel.height floatValue];
+        //添加边框
+        _imgView.frame=CGRectMake(S_WASD,15,VIEW_WIDTH-60,(VIEW_WIDTH-60)/(imgW/imgH));
+    }
+    else{
+        float imgW=560;
+        float imgH=  560;
+        //添加边框
+        _imgView.frame=CGRectMake(S_WASD,15,VIEW_WIDTH-60,(VIEW_WIDTH-60)/(imgW/imgH));
+    }
     
-    
-    //添加边框
-    _imgView.frame=CGRectMake(S_WASD,15,VIEW_WIDTH-60,(VIEW_WIDTH-60)/(imgW/imgH));
 //    CALayer * layer = [_imgView layer];
 //    layer.borderColor = NNRGBColor(236).CGColor;
 //    layer.borderWidth = 0.5f;

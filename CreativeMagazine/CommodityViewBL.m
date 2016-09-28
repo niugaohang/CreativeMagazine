@@ -43,4 +43,26 @@
 
 }
 
+-(void)getCategoryCommodityViewWithStatus:(NSString *)status Cateid:(NSString *)cateid GoodsID:(NSString *)goodsid  withSuccessedBlock:(MyArticleBLSuccessed)success
+{
+    NSMutableDictionary *parameterDic = [[NSMutableDictionary alloc]init];
+    
+    [parameterDic setObject:status forKey:@"status"];
+    [parameterDic setObject:cateid forKey:@"cateid" ];
+    [parameterDic setObject:goodsid forKey:@"goods_id"];
+    [parameterDic setObject:@"10" forKey:@"pagenum"];
+    
+    
+    [[MyRequest defaultRequest]postRequestWithTheType:DETAILCATEGORYID_URL theContent:parameterDic successBlock:^(id obj) {
+        
+        success(obj);
+        
+    } failureBlock:^(NSString *error) {
+        
+        [SVProgressHUD dismiss];
+        NNToast(error);
+    }];
+    
+}
+
 @end

@@ -39,7 +39,7 @@
 {
     
     _myTableView=[self fbd_quickCreateUITabdWithleViewFrame:self.bounds andDelegateAndDataSource:self];
-    //    _myTableView.rowHeight=100;
+    _myTableView.separatorStyle=UITableViewCellSeparatorStyleSingleLine;
     _myTableView.separatorColor=[UIColor clearColor];
     [self addSubview:_myTableView];
     
@@ -73,6 +73,7 @@
     {
         cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indetifier ];
         cell.selectionStyle=UITableViewCellSelectionStyleNone;
+        
     }
     CategoryListBaseClass *categoryObj=[_listData objectAtIndex:indexPath.row];
     

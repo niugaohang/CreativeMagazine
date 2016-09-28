@@ -50,6 +50,10 @@
 #import "CommodityViewBL.h"
 #import "CommodityCell.h"
 #import "CategoryView.h"
+#import "CategorySubViewController.h"
+#import "TBSaleView.h"
+#import "CommodityDetailViewController.h"
+
 
 #import "MoreViewController.h"
 
@@ -215,4 +219,7 @@ kWindow.userInteractionEnabled = YES;\
 
 #define  HOTSHOPPING_URL @"http://www.wowsai.com/index.php?app=shopping&act=ranking&phone=1"
 #define  CATEGORYLIST_URL @"http://www.wowsai.com/index.php?app=shopping&act=phone_getgcategory"
+
+#define DETAILCATEGORYID_URL @"http://www.wowsai.com/index.php?app=shopping&act=phone_getgcategorygoods&phone=1"
+
 #endif /* Header_h */
