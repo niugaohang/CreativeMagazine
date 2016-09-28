@@ -112,6 +112,8 @@
     }
     _previousBtn = sender;
     
+    [SVProgressHUD dismiss];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -47,6 +47,7 @@
 		4F8285BC1D936ECB00DA9BFF /* SelectionCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8285BB1D936ECB00DA9BFF /* SelectionCustomView.m */; };
 		4F8CB4A91D9B89B000180842 /* TBSaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB4A81D9B89B000180842 /* TBSaleView.m */; };
 		4F8CB4AC1D9B90CC00180842 /* CommodityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB4AB1D9B90CC00180842 /* CommodityDetailViewController.m */; };
+		4F8CB4AF1D9B9A7700180842 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8CB4AE1D9B9A7700180842 /* logo@2x.png */; };
 		4F9499BE1D9A45C100F57A57 /* CommodityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499BD1D9A45C100F57A57 /* CommodityView.m */; };
 		4F9499C11D9A4C1200F57A57 /* CommodityViewBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499C01D9A4C1200F57A57 /* CommodityViewBL.m */; };
 		4F9499C41D9A4E8E00F57A57 /* ShoppingModelBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499C31D9A4E8E00F57A57 /* ShoppingModelBaseClass.m */; };
@@ -54,6 +55,8 @@
 		4F9499C91D9A5CA800F57A57 /* price@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F9499C81D9A5CA800F57A57 /* price@2x.png */; };
 		4F9499CC1D9A6B2600F57A57 /* CategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499CB1D9A6B2600F57A57 /* CategoryView.m */; };
 		4F9499D21D9A6CBC00F57A57 /* CategoryListBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9499D01D9A6CBC00F57A57 /* CategoryListBaseClass.m */; };
+		4FD1B0B41D9BA9BE00171F9D /* FTWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1B0B31D9BA9BE00171F9D /* FTWCache.m */; };
+		4FD1B0B81D9BB7CD00171F9D /* NewsData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4FD1B0B71D9BB7CD00171F9D /* NewsData.txt */; };
 		4FD41E601D9B73F700BD2896 /* CategorySubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD41E5F1D9B73F700BD2896 /* CategorySubViewController.m */; };
 		4FD4953E1D94FD0600A851AD /* NewsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4953D1D94FD0600A851AD /* NewsTableVC.m */; };
 		4FD495411D9501DD00A851AD /* VisionMagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD495401D9501DD00A851AD /* VisionMagModel.m */; };
@@ -139,6 +142,7 @@
 		4F8CB4A81D9B89B000180842 /* TBSaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSaleView.m; sourceTree = "<group>"; };
 		4F8CB4AA1D9B90CC00180842 /* CommodityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityDetailViewController.h; sourceTree = "<group>"; };
 		4F8CB4AB1D9B90CC00180842 /* CommodityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityDetailViewController.m; sourceTree = "<group>"; };
+		4F8CB4AE1D9B9A7700180842 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		4F9499BC1D9A45C100F57A57 /* CommodityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityView.h; sourceTree = "<group>"; };
 		4F9499BD1D9A45C100F57A57 /* CommodityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityView.m; sourceTree = "<group>"; };
 		4F9499BF1D9A4C1200F57A57 /* CommodityViewBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityViewBL.h; sourceTree = "<group>"; };
@@ -152,6 +156,9 @@
 		4F9499CB1D9A6B2600F57A57 /* CategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryView.m; sourceTree = "<group>"; };
 		4F9499D01D9A6CBC00F57A57 /* CategoryListBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListBaseClass.m; sourceTree = "<group>"; };
 		4F9499D11D9A6CBC00F57A57 /* CategoryListBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListBaseClass.h; sourceTree = "<group>"; };
+		4FD1B0B21D9BA9BE00171F9D /* FTWCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWCache.h; sourceTree = "<group>"; };
+		4FD1B0B31D9BA9BE00171F9D /* FTWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWCache.m; sourceTree = "<group>"; };
+		4FD1B0B71D9BB7CD00171F9D /* NewsData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewsData.txt; sourceTree = "<group>"; };
 		4FD41E5E1D9B73F700BD2896 /* CategorySubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategorySubViewController.h; sourceTree = "<group>"; };
 		4FD41E5F1D9B73F700BD2896 /* CategorySubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategorySubViewController.m; sourceTree = "<group>"; };
 		4FD4953C1D94FD0600A851AD /* NewsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableVC.h; sourceTree = "<group>"; };
@@ -203,6 +210,8 @@
 		4F314F361D93DA1C00EAFAA3 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				4FD1B0B21D9BA9BE00171F9D /* FTWCache.h */,
+				4FD1B0B31D9BA9BE00171F9D /* FTWCache.m */,
 				4F7E2DF81D92AC0400C5E6E8 /* MyRequest.h */,
 				4F7E2DF91D92AC0400C5E6E8 /* MyRequest.m */,
 				4F314F301D93C45700EAFAA3 /* Tool.h */,
@@ -279,6 +288,7 @@
 		4F7E2DD01D92669700C5E6E8 /* 2x */ = {
 			isa = PBXGroup;
 			children = (
+				4F8CB4AE1D9B9A7700180842 /* logo@2x.png */,
 				4F9499C81D9A5CA800F57A57 /* price@2x.png */,
 				4FFA4E2B1D9569E3000805BB /* Icon@2x.png */,
 				4F314F331D93C7BD00EAFAA3 /* nav_backgroud@2x.png */,
@@ -403,6 +413,7 @@
 		4FD4953B1D94FCD600A851AD /* News(鲜资讯) */ = {
 			isa = PBXGroup;
 			children = (
+				4FD1B0B71D9BB7CD00171F9D /* NewsData.txt */,
 				4F7E2DE91D92700900C5E6E8 /* NewsViewController.h */,
 				4F7E2DEA1D92700900C5E6E8 /* NewsViewController.m */,
 				4FD4953C1D94FD0600A851AD /* NewsTableVC.h */,
@@ -508,6 +519,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8CB4AF1D9B9A7700180842 /* logo@2x.png in Resources */,
 				4F7E2DD21D9266A200C5E6E8 /* Default@2x.png in Resources */,
 				4F314F2D1D93C00E00EAFAA3 /* previous@2x.png in Resources */,
 				4F314F161D9373B200EAFAA3 /* vision_header@2x.png in Resources */,
@@ -516,6 +528,7 @@
 				4F314F2A1D93C00E00EAFAA3 /* first@2x.png in Resources */,
 				4F7E2DB71D9257B900C5E6E8 /* LaunchScreen.storyboard in Resources */,
 				4F7E2DB41D9257B900C5E6E8 /* Assets.xcassets in Resources */,
+				4FD1B0B81D9BB7CD00171F9D /* NewsData.txt in Resources */,
 				4F7E2DB21D9257B900C5E6E8 /* Main.storyboard in Resources */,
 				4F7E2DD71D926E5800C5E6E8 /* bottom_nav_background@2x.png in Resources */,
 				4F7E2DDF1D926E6F00C5E6E8 /* logo3@2x.png in Resources */,
@@ -615,6 +628,7 @@
 				4F314F221D93BC5500EAFAA3 /* VisionMagDetailViewController.m in Sources */,
 				4F7E2DE41D926F3500C5E6E8 /* SelectionViewController.m in Sources */,
 				4F7E2DFA1D92AC0400C5E6E8 /* MyRequest.m in Sources */,
+				4FD1B0B41D9BA9BE00171F9D /* FTWCache.m in Sources */,
 				4F8285BC1D936ECB00DA9BFF /* SelectionCustomView.m in Sources */,
 				4F8285B91D936D0500DA9BFF /* SelectionModelList.m in Sources */,
 				4F9499BE1D9A45C100F57A57 /* CommodityView.m in Sources */,

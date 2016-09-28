@@ -12,6 +12,8 @@
 {
     UITableView  *_tableView;
     UIRefreshControl *_refreshControl;
+    //表当前是否加载了
+    BOOL _isLoaded;
 }
 
 @property (nonatomic,retain) NSMutableArray *dataArray;
@@ -27,15 +29,15 @@
     self = [super init];
     if (self)
     {
-        self.frame=frame;
-        
+        self.viewFram = frame;
+      
     }
     return self;
 }
--(void)setFrame:(CGRect)frame
+-(void)setViewFram:(CGRect)viewFram
 {
-    self.view.frame = frame;
-   
+    self.view.frame = viewFram;
+    _tableView.frame = self.view.frame;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,19 +48,26 @@
 -(void)setIsLoading:(BOOL)isLoading
 {
     //隐藏菊花
-    if (isLoading == YES)
+     if (_isLoaded == NO && isLoading == YES)
     {
         _dataArray=self.dataArr;
-        [self initView];
+       [self initView];
         [_tableView reloadData];
         [SVProgressHUD dismiss];
     }
 }
 -(void)initView {
     
+    //表已经加载过了
+    _isLoaded = YES;
+    if (_tableView) {
+        [_tableView reloadData];
+        return;
+    }
+    
     if (!_tableView)
     {
-       _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0,self.view.frame.size.width , self.view.frame.size.height) style:UITableViewStylePlain];
+      _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0,0,VIEW_WIDTH,VIEW_HEIGHT-64-44-49) style:UITableViewStylePlain];
     }
     
     _tableView.showsVerticalScrollIndicator=YES;
@@ -74,12 +83,17 @@
     
      [_tableView reloadData];
     
-    //目前只能下拉刷新
-    _refreshControl = [[UIRefreshControl alloc] init];
-    _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"努力加载中……"];
-    _refreshControl.tintColor = [UIColor grayColor];
-    [_refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
-    _tableView.refreshControl = _refreshControl;
+
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >=10.0) {
+        //目前只能下拉刷新
+        _refreshControl = [[UIRefreshControl alloc] init];
+        _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"努力加载中……"];
+        _refreshControl.tintColor = [UIColor grayColor];
+        [_refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
+        _tableView.refreshControl = _refreshControl;
+    }
+    
 }
 - (void)loadData{
     

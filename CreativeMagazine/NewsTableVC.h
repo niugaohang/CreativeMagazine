@@ -11,8 +11,7 @@
 
 
 - (id)initWithFrame:(CGRect)frame;
-
-@property (nonatomic,unsafe_unretained) NSUInteger index;
+@property(nonatomic,assign) CGRect viewFram;
 
 @property(nonatomic,retain)NSMutableArray *dataArr;
 @property(nonatomic,assign)CGRect frame;

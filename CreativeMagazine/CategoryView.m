@@ -39,8 +39,8 @@
 {
     
     _myTableView=[self fbd_quickCreateUITabdWithleViewFrame:self.bounds andDelegateAndDataSource:self];
-    _myTableView.separatorStyle=UITableViewCellSeparatorStyleSingleLine;
-    _myTableView.separatorColor=[UIColor clearColor];
+//    _myTableView.separatorStyle=UITableViewCellSeparatorStyleSingleLine;
+//    _myTableView.separatorColor=[UIColor clearColor];
     [self addSubview:_myTableView];
     
 }
@@ -75,11 +75,15 @@
         cell.selectionStyle=UITableViewCellSelectionStyleNone;
         
     }
-    CategoryListBaseClass *categoryObj=[_listData objectAtIndex:indexPath.row];
-    
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = categoryObj.catename;
+    if (_listData.count!=0)
+    {
+        CategoryListBaseClass *categoryObj=[_listData objectAtIndex:indexPath.row];
+        tableView.separatorStyle=UITableViewCellSeparatorStyleSingleLine;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.text = categoryObj.catename;
 
+    }
+    
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

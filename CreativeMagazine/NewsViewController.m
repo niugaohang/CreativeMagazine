@@ -20,6 +20,10 @@
     NSMutableSet    *recycledPages;
     NSMutableSet    *visiblePages;
     
+    NSMutableArray         *_typeArr1;
+    NSMutableArray         *_typeArr2;
+    NSMutableArray         *_typeArr3;
+    
 }
 
 //数据
@@ -28,6 +32,8 @@
 @property(nonatomic,retain)NSMutableArray *dataArr;
 
 @property(nonatomic,retain)NSMutableArray *listDataArr;
+
+@property (nonatomic,strong)NSMutableArray *tableViewManager;
 
 @end
 
@@ -43,6 +49,12 @@
     _titleArray = @[@"全部", @"手工",@"创意",@"艺术"];
     _listDataArr=[[NSMutableArray alloc]initWithCapacity:0];
     _dataArr=[[NSMutableArray alloc]initWithCapacity:0];
+    self.tableViewManager = [[NSMutableArray alloc] init];
+    
+    _typeArr1=[[NSMutableArray alloc]initWithCapacity:0];
+    _typeArr2=[[NSMutableArray alloc]initWithCapacity:0];
+    _typeArr3=[[NSMutableArray alloc]initWithCapacity:0];
+    
     [self reloading];
     
 }
@@ -60,6 +72,23 @@
                 VisionMagModel *allData=[[VisionMagModel alloc]initWithDictionary:dic];
                 [_dataArr addObject:allData];
             }
+            for (VisionMagModel *obj in _dataArr)
+            {
+                if ([obj.type isEqualToString:@"1"])
+                {
+                    [_typeArr1 addObject:obj];
+                    
+                }
+                if ([obj.type isEqualToString:@"2"])
+                {
+                    [_typeArr2 addObject:obj];
+                }
+                if ([obj.type isEqualToString:@"3"])
+                {
+                    [_typeArr3 addObject:obj];
+                }
+            }
+
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self initView];
                 
@@ -70,8 +99,48 @@
             
             [SVProgressHUD dismiss];
             NNToast(error);
+            [self huoQuNewsData];
+            
         }];
     });
+}
+
+-(void)huoQuNewsData
+{
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"NewsData" ofType:@"txt"];
+    NSString* content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+    
+    NSData *data = [content dataUsingEncoding:NSUTF8StringEncoding];
+    NSArray *dataDicArr = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    
+    [_dataArr removeAllObjects];
+    for (NSDictionary *dic in dataDicArr)
+    {
+        VisionMagModel *allData=[[VisionMagModel alloc]initWithDictionary:dic];
+        [_dataArr addObject:allData];
+    }
+    for (VisionMagModel *obj in _dataArr)
+    {
+        if ([obj.type isEqualToString:@"1"])
+        {
+            [_typeArr1 addObject:obj];
+            
+        }
+        if ([obj.type isEqualToString:@"2"])
+        {
+            [_typeArr2 addObject:obj];
+        }
+        if ([obj.type isEqualToString:@"3"])
+        {
+            [_typeArr3 addObject:obj];
+        }
+    }
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self initView];
+        
+    });
+
 }
 
 -(void)initView
@@ -124,7 +193,6 @@
         {
             _titleScrollerWidth=CGRectGetMaxX(button.frame);
         }
-        
     }
     [_titleScroller addSubview:_flagLab];
     _titleScroller.contentSize = CGSizeMake(_titleScrollerWidth+30, 45);
@@ -145,122 +213,32 @@
     _newsScrollView.showsVerticalScrollIndicator=NO;
     _newsScrollView.showsHorizontalScrollIndicator=NO;
     _newsScrollView.backgroundColor=[UIColor whiteColor];
+     [self.view addSubview:_newsScrollView];
+    
+    for (int i = 0; i < _titleArray.count; i ++) {
+        
+      NewsTableVC *newsTableVC = [[NewsTableVC alloc] initWithFrame:CGRectMake(i * _newsScrollView.bounds.size.width, 0, _newsScrollView.bounds.size.width, _newsScrollView.bounds.size.height)];
+
+        //添加到子视图控制器，让子视图控制器管理视图控制器内存
+        [self addChildViewController:newsTableVC];
+        [_newsScrollView addSubview:newsTableVC.view];
+        //存入表管理器
+        [_tableViewManager addObject:newsTableVC];
+        NNLog(@"---%d",i);
+        if (i==0)
+        {
+            newsTableVC.dataArr=self.dataArr;
+            newsTableVC.isLoading=YES;
+        }
+        
+    }
     _newsScrollView.contentSize=CGSizeMake(VIEW_WIDTH * _titleArray.count, VIEW_HEIGHT-64-49-45);
-    
-    [self.view addSubview:_newsScrollView];
-    
-    recycledPages   =[[NSMutableSet alloc] init];
-    visiblePages    =[[NSMutableSet alloc] init];
-    
-    [self totlePages];
-    
-    
    
 
 }
 
-
-
-
-#pragma mark-
-#pragma mark-scrollView重用机制-
-- (void)totlePages
-{
-    // Calculate which pages are visible
-    CGRect visibleBounds        = _newsScrollView.bounds;
-    int firstNeededPageIndex    = floorf(CGRectGetMinX(visibleBounds) / CGRectGetWidth(visibleBounds));
-    
-    int lastNeededPageIndex = floorf((CGRectGetMaxX(visibleBounds)-1) / CGRectGetWidth(visibleBounds));
-    firstNeededPageIndex    = MAX(firstNeededPageIndex, 0);
-    lastNeededPageIndex     = (unsigned)MIN(lastNeededPageIndex, [self.titleArray count] - 1);
-    
-    for (NewsTableVC *newsTableVC in visiblePages)
-    {
-        if (newsTableVC.index < firstNeededPageIndex || newsTableVC.index > lastNeededPageIndex)
-        {
-            [recycledPages addObject:newsTableVC];
-            [newsTableVC.view removeFromSuperview];
-        }
-    }
-    
-    [visiblePages minusSet:recycledPages];
-    // add missing pages
-    for (int index = firstNeededPageIndex; index <= lastNeededPageIndex; index++)
-    {
-        if (![self isDisplayingPageForIndex:index])
-        {
-            NewsTableVC *newsTableVC = [self dequeueRecycledPage];
-            if (newsTableVC == nil)
-            {
-                newsTableVC = [[NewsTableVC alloc] initWithFrame:CGRectMake(0, 0, _newsScrollView.bounds.size.width, _newsScrollView.bounds.size.height)];
-            }
-            [self configurePage:newsTableVC forIndex:index];
-            [self addChildViewController:newsTableVC];
-            [_newsScrollView addSubview:newsTableVC.view];
-            [visiblePages addObject:newsTableVC];
-        }
-    }
-}
-
-- (NewsTableVC *)dequeueRecycledPage
-{
-    NewsTableVC *newsTableVC = [recycledPages anyObject];
-    if (newsTableVC) {
-        [recycledPages removeObject:newsTableVC];
-        newsTableVC = nil;
-    }
-    return newsTableVC;
-}
-
-- (BOOL)isDisplayingPageForIndex:(NSUInteger)index
-{
-    BOOL foundPage      = NO;
-    for (NewsTableVC *newsTableVC in visiblePages) {
-        if (newsTableVC.index  == index) {
-            foundPage       = YES;
-            //            设置Title时,必须在找到当前页的时候才设置
-            //            textLab.text    = page.model.title;
-            
-            break;
-        }
-    }
-    return foundPage;
-}
-
-- (void)configurePage:(NewsTableVC *)newsTableVC forIndex:(NSUInteger)index
-{
-    NSLog(@"----%lu--",(unsigned long)index);
-    newsTableVC.index = index;
-    
-    if (index==0)
-    {
-        newsTableVC.dataArr=self.dataArr;
-    }
-    else{
-        [_listDataArr removeAllObjects];
-        for (VisionMagModel *obj in _dataArr)
-        {
-            if ([obj.type integerValue]==index)
-            {
-                [_listDataArr addObject:obj];
-            }
-        }
-        newsTableVC.dataArr=_listDataArr;
-    }
-    newsTableVC.frame=CGRectMake(_newsScrollView.bounds.size.width*index, 0, _newsScrollView.bounds.size.width, _newsScrollView.bounds.size.height);
-    newsTableVC.isLoading=YES;
-    
-}
-
 #pragma mark -scrollViewDelegate
 //视图滑动时
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [self totlePages];
-    //回到第一页重新加载
-//    if (_newsScrollView.contentOffset.x>_newsScrollView.frame.size.width*([self.titleArray count]-1)+100) {
-//        [_newsScrollView scrollRectToVisible:CGRectMake(_newsScrollView.frame.size.width*0,0,_newsScrollView.frame.size.width,_newsScrollView.frame.size.height) animated:NO];
-//    }
-}
 //我们移动手指开始
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
     //判断是 最后一页
@@ -275,8 +253,34 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     //判断是 第一页
     
+
+    
     int index = scrollView.contentOffset.x / scrollView.bounds.size.width;
 
+    NewsTableVC *newsTableVC = _tableViewManager[index];
+    
+    if (!newsTableVC.isLoading)
+    {
+        if (index==0)
+        {
+            newsTableVC.dataArr=self.dataArr;
+        }
+        if (index==1)
+        {
+            newsTableVC.dataArr=_typeArr1;
+        }
+        if (index==2)
+        {
+            newsTableVC.dataArr=_typeArr2;
+        }
+        if (index==3)
+        {
+            newsTableVC.dataArr=_typeArr3;
+        }
+
+        newsTableVC.isLoading = YES;
+    }
+    
     NSArray *array = _titleScroller.subviews;
     for (id obj in array) {
         if ([obj isKindOfClass:[UIButton class]]) {
@@ -304,6 +308,31 @@
 #pragma amrk - 标题按钮
 -(void)titleZiXunBtn:(UIButton *)sender {
    
+    NewsTableVC *newsTableVC = _tableViewManager[sender.tag];
+    
+    if (!newsTableVC.isLoading)
+    {
+        if (sender.tag==0)
+        {
+            newsTableVC.dataArr=self.dataArr;
+        }
+        if (sender.tag==1)
+        {
+            newsTableVC.dataArr=_typeArr1;
+        }
+        if (sender.tag==2)
+        {
+            newsTableVC.dataArr=_typeArr2;
+        }
+        if (sender.tag==3)
+        {
+            newsTableVC.dataArr=_typeArr3;
+        }
+        
+        newsTableVC.isLoading = YES;
+    }
+
+    
     //复原未被点击按钮颜色
     NSArray *array = sender.superview.subviews;
     for (id obj in array) {
